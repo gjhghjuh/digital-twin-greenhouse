@@ -320,10 +320,21 @@ D7最新版本记录G5认可、跨端不做与当前范围交付，94页、609�
 用户已认可G5当前范围，明确不做AUTO、设备规则、设备本地报警等跨端能力。当前范围交付资料已就绪，不再以极端测试或低于70%把握的猜测性迭代拖延。原项目完整跨端需求未实现，不冒称原K/M3全部通过；USB重连一次需复位、D5设备ID定义差异和高内存峰值保留为限制。
 
 
-## 16. 2026-11-02 GitHub 备份与下载交付（最新）
+## 16. 2026-11-02 GitHub 首次私有上传（历史，当前公开状态见第十七节）
 
 用户要求把项目相关文件上传 GitHub。已创建私有仓库 [digital-twin-greenhouse](https://github.com/gjhghjuh/digital-twin-greenhouse)，默认分支 main；初始源码提交 47827883a22202ee8fb3c152f48e73de00594296。仓库在线可浏览 Android/ESP32 源码、3D 模型和图标、契约、串口归档工具、真实 CSV、七份 V3.0 项目文档、原 HANDOFF 与交付清单，共139个文件。沿用已脱敏交付包，没有上传本机网络/OneNET凭据、生成配置头、含凭据固件编译产物或构建缓存；公开CA证书 certificate.pem 已纳入。
 
 下载版本：[v0.5.0-g5-r01](https://github.com/gjhghjuh/digital-twin-greenhouse/releases/tag/v0.5.0-g5-r01)。附件为已认可的debug APK、完整脱敏交付ZIP、D7副本、交付清单、35秒实机录屏；5项附件均已上传，GitHub返回的SHA256逐项与本地一致。文件使用英文下载名，内容与本地原件一致；当前范围与已知限制保持不变。私有仓库与Release需使用有权限的GitHub账号访问。
 
 本地可继续提交的脱敏Git工作副本位于 output/github-upload-20261102/repository，与保留真实私有配置的原工作区分开。后续上传应继续按白名单同步，不得将整个原工作区直接加入Git。上传文件清单、校验值、远端提交与附件地址见 output/github-upload-20261102/upload-progress.json。Chrome附件接口因扩展未允许文件URL而不可用，最终复用本机现有GitHub凭据通过Git和GitHub API完成；未更改浏览器安全设置、未创建新访问密钥。
+
+
+## 17. 2026-11-02 GitHub 公开与 README（最新）
+
+用户明确要求“把仓库改成公开的，方便别人查看，并且要有README”。已将 [digital-twin-greenhouse](https://github.com/gjhghjuh/digital-twin-greenhouse) 从私有改为公开；第十六节的私有状态仅为首次上传时的历史。未携带Authorization的请求已核对仓库public标记、README正文和全部5个Release附件的下载入口，均可访问；附件大小与已验证的服务端SHA256仍与本地原件一致。
+
+仓库根目录已增加README.md及三张实际G5手机截图，内容包括功能/模拟范围、界面预览、架构图、目录、APK与录屏入口、Android构建、独立OneNET接入前提、PlatformIO可视化与烧录、GPIO接线、串口归档及已知限制。截图裁去系统状态栏，仅展示项目界面。README明确现有APK的产品/设备身份固定；使用自己的云设备须修改对应源码常量和映射后构建，没有公开共享密钥。
+
+本轮仅修改仓库展示与交付状态，未修改功能源码、固件或已认可APK。新README及截图不属于原交付ZIP清单，原Release版本和原件哈希保持不变。公开前复核已提交历史和5个附件：未发现已知密钥或明确实际令牌/私钥，源码动态签名拼接模板与普通设备标识不冒充泄密。没有新建访问密钥。
+
+可继续提交的本地Git工作副本：output/github-upload-20261102/repository；README位于该工作副本根目录。公开核验记录：output/github-upload-20261102/public-readme-verification.json；完整上传索引继续使用同目录upload-progress.json。
