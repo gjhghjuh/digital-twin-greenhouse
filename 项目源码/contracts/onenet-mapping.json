@@ -1,0 +1,68 @@
+{
+  "status": "物模型已在控制台保存；真实上报200；控制联调继续",
+  "properties": {
+    "temperature": "仅VALID时上报真实温度",
+    "humidity": "仅VALID时上报真实湿度",
+    "soilHumidity": "SIMULATION；标量四舍五入至0.01，snapshot保留原始模型精度",
+    "lightLevel": "EXPERIMENT，0—7",
+    "snapshot": "紧凑JSON，512字符；完整串口快照继续按record.schema.json归档",
+    "controlPacket": "command.schema.json序列化期望控制包，唯一远程控制通道",
+    "commandResult": "按commandId关联的执行结果与当前状态"
+  },
+  "numericNullPolicy": "无效标量不发送替代值；空值及有效性由snapshot.o明确表达，标量旧值不可当作当前有效值",
+  "productId": "28Q9sTZMG6",
+  "deviceName": "ESP32-ccaa29c4f5fc",
+  "tls": {
+    "host": "mqttstls.heclouds.com",
+    "port": 8883,
+    "verify": "官方CA链、有效期、固定服务CN OneNET MQTTS及叶证书DER SHA256同时校验",
+    "caSha256": "a576998e38b530bf14c0200e8a02e997616d99e0e1bb25475ec7e7a80e5fd17f",
+    "leafDerSha256": "7de9bc4c1aed01344667645678d449741210b17049489838bf637953b3e90117"
+  },
+  "compactSnapshot": {
+    "v": "编码版本1",
+    "b": "bootId",
+    "q": "snapshot seq",
+    "s": "stateVersion",
+    "t": "utcMs，未同步null",
+    "u": "uptimeMs",
+    "c": "configVersion",
+    "m": "modelVersion",
+    "o": {
+      "order": [
+        "temperature",
+        "humidity",
+        "lightLevel",
+        "soilHumidity"
+      ],
+      "tuple": [
+        "value或null",
+        "validityCode",
+        "sampledAtUtcMs或null",
+        "sampledUptimeMs"
+      ],
+      "validityCodes": {
+        "0": "NOT_READY",
+        "1": "VALID",
+        "2": "READ_ERROR"
+      },
+      "sources": [
+        "SENSOR",
+        "SENSOR",
+        "EXPERIMENT",
+        "SIMULATION"
+      ]
+    },
+    "a": [
+      "pump",
+      "lamp",
+      "fan"
+    ],
+    "mode": "0=三路MANUAL；M0其他模式拒绝",
+    "raw": "lightAdcRaw",
+    "adc": "lightAdcFiltered",
+    "w": "wifiConnected",
+    "net": "cloudConnected",
+    "cmd": "lastCommandId；结果见commandResult属性"
+  }
+}

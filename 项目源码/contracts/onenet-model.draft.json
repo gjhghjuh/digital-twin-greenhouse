@@ -1,0 +1,109 @@
+{
+  "properties": [
+    {
+      "identifier": "temperature",
+      "name": "温度",
+      "functionType": "u",
+      "accessMode": "r",
+      "desc": "",
+      "dataType": {
+        "type": "float",
+        "specs": {
+          "min": "-55",
+          "max": "125",
+          "step": "0.0625",
+          "unit": ""
+        }
+      }
+    },
+    {
+      "identifier": "humidity",
+      "name": "空气湿度",
+      "functionType": "u",
+      "accessMode": "r",
+      "desc": "",
+      "dataType": {
+        "type": "float",
+        "specs": {
+          "min": "0",
+          "max": "100",
+          "step": "1",
+          "unit": ""
+        }
+      }
+    },
+    {
+      "identifier": "soilHumidity",
+      "name": "模拟土壤湿度",
+      "functionType": "u",
+      "accessMode": "r",
+      "desc": "SIMULATION土壤模型百分比，非传感器读数。",
+      "dataType": {
+        "type": "float",
+        "specs": {
+          "min": "0",
+          "max": "100",
+          "step": "0.01",
+          "unit": ""
+        }
+      }
+    },
+    {
+      "identifier": "lightLevel",
+      "name": "实验光照档位",
+      "functionType": "u",
+      "accessMode": "r",
+      "desc": "EXPERIMENT电位器分档，非lux测量。",
+      "dataType": {
+        "type": "int32",
+        "specs": {
+          "min": "0",
+          "max": "7",
+          "step": "1",
+          "unit": ""
+        }
+      }
+    },
+    {
+      "identifier": "snapshot",
+      "name": "紧凑状态快照",
+      "functionType": "u",
+      "accessMode": "r",
+      "desc": "512字符紧凑JSON；字段语义以项目onenet-mapping.json为准。",
+      "dataType": {
+        "type": "string",
+        "specs": {
+          "length": 512
+        }
+      }
+    },
+    {
+      "identifier": "controlPacket",
+      "name": "期望控制包",
+      "functionType": "u",
+      "accessMode": "rw",
+      "desc": "",
+      "dataType": {
+        "type": "string",
+        "specs": {
+          "length": 512
+        }
+      }
+    },
+    {
+      "identifier": "commandResult",
+      "name": "关联命令结果",
+      "functionType": "u",
+      "accessMode": "r",
+      "desc": "",
+      "dataType": {
+        "type": "string",
+        "specs": {
+          "length": 512
+        }
+      }
+    }
+  ],
+  "events": [],
+  "services": []
+}

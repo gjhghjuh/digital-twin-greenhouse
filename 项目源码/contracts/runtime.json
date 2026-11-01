@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "configVersion": 1,
+  "modelVersion": 1,
+  "serial": {
+    "baudrate": 115200,
+    "bytesize": 8,
+    "parity": "N",
+    "stopbits": 1,
+    "encoding": "utf-8",
+    "dataPrefix": "DATA ",
+    "logPrefix": "LOG ",
+    "maxLineBytes": 16384
+  },
+  "timing": {
+    "sampleMs": 2000,
+    "snapshotMs": 10000,
+    "cloudPostMs": 10000,
+    "gapAfterMs": 15000
+  },
+  "hardware": {
+    "board": "esp32dev",
+    "module": "ESP32-WROOM-32",
+    "baseboard": "pyBase v1.1",
+    "ds18b20": 4,
+    "dht11": 27,
+    "adc": 36,
+    "oledScl": 14,
+    "oledSda": 13,
+    "buzzer": 25,
+    "leds": {
+      "pump": 18,
+      "lamp": 19,
+      "fan": 23
+    },
+    "ledActiveHigh": true,
+    "oledDriver": "U8G2_SSD1306_128X64_NONAME_F_HW_I2C",
+    "oledAddress": 60,
+    "verification": "板上原有程序采用SSD1306 128x64、地址0x3c、SDA13/SCL14；本次I2C扫描确认0x3c。完整画面与外接LED仍待肉眼确认。"
+  },
+  "light": {
+    "bits": 12,
+    "attenuationDb": 11,
+    "averageSamples": 16,
+    "adcMin": 0,
+    "adcMax": 4095,
+    "endpointBasis": "12位ADC编码端点，尚非实测校准",
+    "levels": 8,
+    "hysteresisCounts": 32,
+    "reason": "等宽512计数分档；32计数滞回抑制边界抖动；16次平均抑制采样噪声"
+  },
+  "soil": {
+    "source": "SIMULATION",
+    "initial": 50.0,
+    "evaporationPerSecond": 0.02,
+    "pumpIncreasePerSecond": 0.2,
+    "min": 0,
+    "max": 100
+  },
+  "command": {
+    "idMaxLength": 64,
+    "maxBytes": 512,
+    "defaultTtlMs": 60000,
+    "maxTtlMs": 300000,
+    "dedupeSlots": 64,
+    "dedupeStorage": "NVS",
+    "requiresBootId": true,
+    "restartPolicy": "所有输出关闭；新bootId；旧targetBootId拒绝；已接收commandId保留；执行前持久化RECEIVED，重启未完成记录返回INTERRUPTED且不重放",
+    "retention": "保留最近64条结果；目标bootId与issuedAt高水位共同阻止已淘汰旧包重放",
+    "modePolicy": "M0仅执行MANUAL开关；AUTO明确拒绝UNSUPPORTED_MODE，不伪称自动规则已实现"
+  },
+  "csv": {
+    "encoding": "utf-8",
+    "null": "",
+    "boolean": [
+      "false",
+      "true"
+    ],
+    "dayBasis": "receivedAtUtcMs UTC日期",
+    "quoting": "RFC4180",
+    "identity": [
+      "deviceId",
+      "bootId",
+      "kind",
+      "seq"
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "commandId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64,
+      "pattern": "^[A-Za-z0-9._:-]{1,64}$"
+    },
+    "targetBootId": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{32}$"
+    },
+    "issuedAtUtcMs": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "expiresAtUtcMs": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "configVersion": {
+      "const": 1
+    },
+    "target": {
+      "enum": [
+        "pump",
+        "lamp",
+        "fan"
+      ]
+    },
+    "mode": {
+      "enum": [
+        "MANUAL",
+        "AUTO"
+      ]
+    },
+    "state": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "commandId",
+    "targetBootId",
+    "issuedAtUtcMs",
+    "expiresAtUtcMs",
+    "configVersion",
+    "target",
+    "mode",
+    "state"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,5020 @@
+{
+  "schemaVersion": 1,
+  "assetVersion": "2.0.0",
+  "assetId": "greenhouse-v2",
+  "glb": "greenhouse.glb",
+  "glbRelativeTo": "twin-map.json",
+  "glbSha256": "636e10c59ad97381846aed8e17ac17c66b3855b7b489e4c606d1a94f361676ac",
+  "units": {
+    "name": "metre",
+    "metresPerUnit": 1
+  },
+  "coordinates": {
+    "glb": {
+      "handedness": "RIGHT_HANDED",
+      "upAxis": "+Y",
+      "lengthAxis": "+X",
+      "widthAxis": "+Z",
+      "origin": "棚体地面中心",
+      "positionOrder": [
+        "X",
+        "Y",
+        "Z"
+      ]
+    },
+    "sourceBlender": {
+      "upAxis": "+Z",
+      "lengthAxis": "+X",
+      "widthAxis": "+Y"
+    },
+    "sourceToGLB": {
+      "positionFormula": "[x,y,z]_GLB=[x,z,-y]_Blender",
+      "matrixColumnMajor": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "valuesDerivedFrom": "真实GLB节点TRS与父链世界变换；边界来自POSITION二进制buffer；摄影相机明确从Blender坐标转换"
+  },
+  "design": {
+    "classification": "DESIGN_DEMO",
+    "source": "用户授权V2参考图复刻；12m×8m演示尺度；未实测设备及陈设位置",
+    "dimensionsMetres": {
+      "length": 12,
+      "width": 8,
+      "eavesHeight": 2.8,
+      "ridgeHeight": 4
+    },
+    "entrance": {
+      "shortSide": "-X",
+      "width": 1.6,
+      "height": 2.2,
+      "doorType": "DOUBLE_GLASS_DOOR"
+    },
+    "plantingBeds": {
+      "count": 4,
+      "rowsPerBed": 2,
+      "length": 9,
+      "width": 1.2,
+      "centresGLB": [
+        [
+          0.3,
+          0.337,
+          2.7
+        ],
+        [
+          0.3,
+          0.337,
+          0.9
+        ],
+        [
+          0.3,
+          0.337,
+          -0.9
+        ],
+        [
+          0.3,
+          0.337,
+          -2.7
+        ]
+      ],
+      "boundsByBed": {
+        "SM_PlantingBed_01": {
+          "min": [
+            -4.2,
+            0,
+            2.09
+          ],
+          "max": [
+            4.8,
+            0.674,
+            3.3100001
+          ],
+          "dimensions": [
+            9,
+            0.674,
+            1.22
+          ]
+        },
+        "SM_PlantingBed_02": {
+          "min": [
+            -4.2,
+            0,
+            0.29
+          ],
+          "max": [
+            4.8,
+            0.674,
+            1.51
+          ],
+          "dimensions": [
+            9,
+            0.674,
+            1.22
+          ]
+        },
+        "SM_PlantingBed_03": {
+          "min": [
+            -4.2,
+            0,
+            -1.51
+          ],
+          "max": [
+            4.8,
+            0.674,
+            -0.29
+          ],
+          "dimensions": [
+            9,
+            0.674,
+            1.22
+          ]
+        },
+        "SM_PlantingBed_04": {
+          "min": [
+            -4.2,
+            0,
+            -3.3100001
+          ],
+          "max": [
+            4.8,
+            0.674,
+            -2.09
+          ],
+          "dimensions": [
+            9,
+            0.674,
+            1.22
+          ]
+        }
+      },
+      "source": "DESIGN_DEMO"
+    },
+    "unmeasured": [
+      "实际大棚尺寸",
+      "设备安装距离与锚点",
+      "真实水流量及压力",
+      "风扇转速或风量",
+      "真实土壤湿度",
+      "环境盒与土壤探针实际接入"
+    ],
+    "baseDimensionsMetres": {
+      "length": 12.7000003,
+      "width": 8.6999998,
+      "thickness": 0.32,
+      "source": "实际GLB的SM_Base_01几何边界"
+    },
+    "lighting": {
+      "fixtureCount": 4,
+      "fixtureLengthMetres": 6.6,
+      "arrangement": "每床一根长条灯；优先匹配整体参考的一致布局",
+      "liveStatusSource": "snapshot.a[1]",
+      "blenderPresentationLightsExcludedFromGLB": true
+    }
+  },
+  "boundsGLB": {
+    "min": [
+      -6.3499999,
+      -0.32,
+      -4.3499999
+    ],
+    "max": [
+      6.3500004,
+      4.0001397,
+      4.3499999
+    ],
+    "dimensions": [
+      12.7000003,
+      4.3201397,
+      8.6999998
+    ],
+    "includes": "完整温室、屋顶、围护、全部设备和混凝土基座"
+  },
+  "rootNode": "Greenhouse_Root",
+  "rootGroups": {
+    "Structure_Root": {
+      "node": "Structure_Root",
+      "nodeIndex": 75,
+      "initialTransform": {
+        "node": "Structure_Root",
+        "nodeIndex": 75,
+        "parentNode": "Greenhouse_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "Roof_Root": {
+      "node": "Roof_Root",
+      "nodeIndex": 59,
+      "initialTransform": {
+        "node": "Roof_Root",
+        "nodeIndex": 59,
+        "parentNode": "Greenhouse_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "Planting_Root": {
+      "node": "Planting_Root",
+      "nodeIndex": 41,
+      "initialTransform": {
+        "node": "Planting_Root",
+        "nodeIndex": 41,
+        "parentNode": "Greenhouse_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "Irrigation_Root": {
+      "node": "Irrigation_Root",
+      "nodeIndex": 23,
+      "initialTransform": {
+        "node": "Irrigation_Root",
+        "nodeIndex": 23,
+        "parentNode": "Greenhouse_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "Pump_Root": {
+      "node": "Pump_Root",
+      "nodeIndex": 46,
+      "initialTransform": {
+        "node": "Pump_Root",
+        "nodeIndex": 46,
+        "parentNode": "Greenhouse_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "Lamp_Root": {
+      "node": "Lamp_Root",
+      "nodeIndex": 28,
+      "initialTransform": {
+        "node": "Lamp_Root",
+        "nodeIndex": 28,
+        "parentNode": "Greenhouse_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "Fan_Root": {
+      "node": "Fan_Root",
+      "nodeIndex": 17,
+      "initialTransform": {
+        "node": "Fan_Root",
+        "nodeIndex": 17,
+        "parentNode": "Greenhouse_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "Controller_Root": {
+      "node": "Controller_Root",
+      "nodeIndex": 13,
+      "initialTransform": {
+        "node": "Controller_Root",
+        "nodeIndex": 13,
+        "parentNode": "Greenhouse_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "Anchors_Root": {
+      "node": "Anchors_Root",
+      "nodeIndex": 8,
+      "initialTransform": {
+        "node": "Anchors_Root",
+        "nodeIndex": 8,
+        "parentNode": "Greenhouse_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "roof": {
+    "rootNode": "Roof_Root",
+    "defaultShown": true,
+    "hideMethod": "运行时按Roof_Root子树或displayGroups指定屋面/屋架分组设置可见性",
+    "includes": [
+      "Roof_Root",
+      "Roof_EndFrame_Root",
+      "SM_GableGlass_01",
+      "SM_GablePosts_01",
+      "SM_RoofFrame_Ends_01",
+      "Roof_FarFrame_Root",
+      "SM_RoofFrame_Far_01",
+      "Roof_FarPanels_Root",
+      "SM_RoofPanels_Far_01",
+      "Roof_NearFrame_Root",
+      "SM_RoofFrame_Near_01",
+      "Roof_NearPanels_Root",
+      "SM_RoofPanels_Near_01"
+    ],
+    "hideDoesNotHideEquipment": true
+  },
+  "actuators": {
+    "pump": {
+      "businessId": "pump",
+      "rootNode": "Pump_Root",
+      "rootNodeIndex": 46,
+      "pickableMeshes": [
+        "SM_Pump_01"
+      ],
+      "pickableMeshBoundsGLB": {
+        "min": [
+          -5.8200002,
+          0.177,
+          2.8789999
+        ],
+        "max": [
+          -4.7087131,
+          1.102,
+          3.4720001
+        ],
+        "dimensions": [
+          1.1112871,
+          0.925,
+          0.5930002
+        ]
+      },
+      "equipmentMeshes": [
+        "SM_Pump_01",
+        "SM_PumpBase_01",
+        "SM_PumpFlow_01",
+        "SM_PumpIntake_01"
+      ],
+      "dynamicNodes": [
+        "SM_PumpFlow_01"
+      ],
+      "dynamicMaterials": [
+        "MAT_PumpFlow_Virtual"
+      ],
+      "materialsByMesh": {
+        "SM_Pump_01": [
+          "MAT_Equipment_Grey",
+          "MAT_Metal_Stainless",
+          "MAT_Rubber_Dark",
+          "MAT_Sensor_White",
+          "MAT_Valve_Orange"
+        ],
+        "SM_PumpBase_01": [
+          "MAT_Concrete_Base",
+          "MAT_Metal_Silver"
+        ],
+        "SM_PumpFlow_01": [
+          "MAT_PumpFlow_Virtual"
+        ],
+        "SM_PumpIntake_01": [
+          "MAT_Pipe_Charcoal"
+        ]
+      },
+      "reported": {
+        "oneNETProperty": "snapshot",
+        "source": "snapshot.a[0]",
+        "index": 0,
+        "type": "boolean",
+        "independentOneNETProperty": false
+      },
+      "physicalOutput": {
+        "hardware": "外接LED",
+        "connector": "X1",
+        "gpio": 18,
+        "activeLevel": "HIGH"
+      },
+      "modelRole": "三路外接LED业务状态的虚拟设备表达，设备外观复刻不代表真实执行器接入",
+      "defaultVisualState": "OFF",
+      "defaultReportedState": "UNKNOWN",
+      "initialSyncState": "INITIAL_SYNC",
+      "initialTransforms": [
+        {
+          "node": "Pump_Root",
+          "nodeIndex": 46,
+          "parentNode": "Greenhouse_Root",
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "rotationQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "worldPosition": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "node": "SM_Pump_01",
+          "nodeIndex": 42,
+          "parentNode": "Pump_Root",
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "rotationQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "worldPosition": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "node": "SM_PumpFlow_01",
+          "nodeIndex": 44,
+          "parentNode": "Pump_Root",
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "rotationQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "worldPosition": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "anchor": {
+        "node": "Anchor_Pump",
+        "nodeIndex": 5,
+        "parentNode": "Anchors_Root",
+        "translation": [
+          -5.25,
+          1.1200000047683716,
+          3.200000047683716
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          -5.25,
+          1.12,
+          3.2
+        ]
+      },
+      "effectOnlyFromLatestValidReported": true,
+      "virtualWaterFlow": {
+        "node": "SM_PumpFlow_01",
+        "material": "MAT_PumpFlow_Virtual",
+        "semantic": "DESIGN_DEMO泵开启视觉语义；不表达实测流量、压力",
+        "default": {
+          "alphaMode": "MASK",
+          "alphaCutoff": 0.5,
+          "baseColorFactor": [
+            0.02500000037252903,
+            0.550000011920929,
+            0.6499999761581421,
+            0
+          ]
+        },
+        "onBaseColorAlpha": 1,
+        "onEffect": "仅将指定水流材质Alpha设为1或显示该指定节点",
+        "offEffect": "独立水流材质Alpha=0且停止活动提示"
+      }
+    },
+    "lamp": {
+      "businessId": "lamp",
+      "rootNode": "Lamp_Root",
+      "rootNodeIndex": 28,
+      "pickableMeshes": [
+        "SM_Lamp_01"
+      ],
+      "pickableMeshBoundsGLB": {
+        "min": [
+          -3.0039999,
+          2.3535001,
+          -2.7574999
+        ],
+        "max": [
+          3.6040001,
+          2.4584999,
+          2.7574999
+        ],
+        "dimensions": [
+          6.608,
+          0.1049998,
+          5.5149999
+        ]
+      },
+      "equipmentMeshes": [
+        "SM_Lamp_01",
+        "SM_LampGlow_01",
+        "SM_LampMounts_01",
+        "SM_LampSupportRails_01"
+      ],
+      "dynamicNodes": [
+        "SM_LampGlow_01"
+      ],
+      "dynamicMaterials": [
+        "MAT_Lamp_Emission"
+      ],
+      "materialsByMesh": {
+        "SM_Lamp_01": [
+          "MAT_Equipment_Grey",
+          "MAT_Metal_Silver",
+          "MAT_Rubber_Dark"
+        ],
+        "SM_LampGlow_01": [
+          "MAT_Lamp_Emission"
+        ],
+        "SM_LampMounts_01": [
+          "MAT_Metal_Silver",
+          "MAT_Rubber_Dark"
+        ],
+        "SM_LampSupportRails_01": [
+          "MAT_Metal_Silver"
+        ]
+      },
+      "reported": {
+        "oneNETProperty": "snapshot",
+        "source": "snapshot.a[1]",
+        "index": 1,
+        "type": "boolean",
+        "independentOneNETProperty": false
+      },
+      "physicalOutput": {
+        "hardware": "外接LED",
+        "connector": "X2",
+        "gpio": 19,
+        "activeLevel": "HIGH"
+      },
+      "modelRole": "三路外接LED业务状态的虚拟设备表达，设备外观复刻不代表真实执行器接入",
+      "defaultVisualState": "OFF",
+      "defaultReportedState": "UNKNOWN",
+      "initialSyncState": "INITIAL_SYNC",
+      "initialTransforms": [
+        {
+          "node": "Lamp_Root",
+          "nodeIndex": 28,
+          "parentNode": "Greenhouse_Root",
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "rotationQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "worldPosition": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "node": "SM_Lamp_01",
+          "nodeIndex": 24,
+          "parentNode": "Lamp_Root",
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "rotationQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "worldPosition": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "node": "SM_LampGlow_01",
+          "nodeIndex": 25,
+          "parentNode": "Lamp_Root",
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "rotationQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "worldPosition": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "anchor": {
+        "node": "Anchor_Lamp",
+        "nodeIndex": 3,
+        "parentNode": "Anchors_Root",
+        "translation": [
+          -1.7999999523162842,
+          2.4000000953674316,
+          0.8999999761581421
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          -1.8,
+          2.4000001,
+          0.9
+        ]
+      },
+      "effectOnlyFromLatestValidReported": true,
+      "emission": {
+        "node": "SM_LampGlow_01",
+        "material": "MAT_Lamp_Emission",
+        "defaultEmissiveFactor": [
+          0,
+          0,
+          0
+        ],
+        "onEffect": "运行时仅调节专用发光面为柔和暖白；Android强度与叶片受光方式待确认",
+        "offEffect": "专用发光面强度为0",
+        "blenderBloomDoesNotTransfer": true,
+        "blenderPresentationLightsExcluded": true
+      }
+    },
+    "fan": {
+      "businessId": "fan",
+      "rootNode": "Fan_Root",
+      "rootNodeIndex": 17,
+      "pickableMeshes": [
+        "SM_FanHousing_01"
+      ],
+      "pickableMeshBoundsGLB": {
+        "min": [
+          5.796,
+          1.3314999,
+          -0.685
+        ],
+        "max": [
+          6.0479999,
+          2.7185001,
+          0.685
+        ],
+        "dimensions": [
+          0.2519999,
+          1.3870002,
+          1.37
+        ]
+      },
+      "equipmentMeshes": [
+        "SM_FanGuard_01",
+        "SM_FanHousing_01",
+        "SM_FanRotor_01"
+      ],
+      "dynamicNodes": [
+        "SM_FanRotor_01"
+      ],
+      "dynamicMaterials": [],
+      "materialsByMesh": {
+        "SM_FanGuard_01": [
+          "MAT_Metal_Silver"
+        ],
+        "SM_FanHousing_01": [
+          "MAT_Metal_Silver",
+          "MAT_Rubber_Dark"
+        ],
+        "SM_FanRotor_01": [
+          "MAT_Metal_Silver",
+          "MAT_Rubber_Dark"
+        ]
+      },
+      "reported": {
+        "oneNETProperty": "snapshot",
+        "source": "snapshot.a[2]",
+        "index": 2,
+        "type": "boolean",
+        "independentOneNETProperty": false
+      },
+      "physicalOutput": {
+        "hardware": "外接LED",
+        "connector": "X3",
+        "gpio": 23,
+        "activeLevel": "HIGH"
+      },
+      "modelRole": "三路外接LED业务状态的虚拟设备表达，设备外观复刻不代表真实执行器接入",
+      "defaultVisualState": "OFF",
+      "defaultReportedState": "UNKNOWN",
+      "initialSyncState": "INITIAL_SYNC",
+      "initialTransforms": [
+        {
+          "node": "Fan_Root",
+          "nodeIndex": 17,
+          "parentNode": "Greenhouse_Root",
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "rotationQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "worldPosition": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "node": "SM_FanHousing_01",
+          "nodeIndex": 15,
+          "parentNode": "Fan_Root",
+          "translation": [
+            0,
+            0,
+            0
+          ],
+          "rotationQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "worldPosition": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "node": "SM_FanRotor_01",
+          "nodeIndex": 16,
+          "parentNode": "Fan_Root",
+          "translation": [
+            5.925000190734863,
+            2.0250000953674316,
+            0
+          ],
+          "rotationQuaternion": [
+            0,
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            1,
+            1
+          ],
+          "worldPosition": [
+            5.9250002,
+            2.0250001,
+            0
+          ]
+        }
+      ],
+      "anchor": {
+        "node": "Anchor_Fan",
+        "nodeIndex": 1,
+        "parentNode": "Anchors_Root",
+        "translation": [
+          5.925000190734863,
+          2.0250000953674316,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          5.9250002,
+          2.0250001,
+          0
+        ]
+      },
+      "effectOnlyFromLatestValidReported": true,
+      "rotation": {
+        "node": "SM_FanRotor_01",
+        "pivotGLB": [
+          5.9250002,
+          2.0250001,
+          0
+        ],
+        "pivotLocal": [
+          0,
+          0,
+          0
+        ],
+        "localAxis": [
+          1,
+          0,
+          0
+        ],
+        "worldAxis": [
+          1,
+          0,
+          0
+        ],
+        "defaultQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "defaultAngularSpeed": 0,
+        "speedSource": "DESIGN_DEMO视觉参数；没有实测RPM",
+        "onEffect": "最新有效Reported=true时运行时绕指定局部轴旋转",
+        "offEffect": "停止旋转",
+        "autoPlayback": false
+      }
+    }
+  },
+  "soil": {
+    "nodes": [
+      "SM_SoilBed_01",
+      "SM_SoilBed_02",
+      "SM_SoilBed_03",
+      "SM_SoilBed_04"
+    ],
+    "material": "MAT_Soil_Independent",
+    "individualNodes": true,
+    "materialSharing": "四床共享只供土壤使用的独立材质；运行时单床调节需创建材质实例",
+    "boundsByNode": {
+      "SM_SoilBed_01": {
+        "min": [
+          -4.1450002,
+          0.552,
+          2.15
+        ],
+        "max": [
+          4.7450002,
+          0.62,
+          3.2500001
+        ],
+        "dimensions": [
+          8.8900003,
+          0.068,
+          1.1
+        ]
+      },
+      "SM_SoilBed_02": {
+        "min": [
+          -4.1450002,
+          0.552,
+          0.35
+        ],
+        "max": [
+          4.7450002,
+          0.62,
+          1.45
+        ],
+        "dimensions": [
+          8.8900003,
+          0.068,
+          1.1
+        ]
+      },
+      "SM_SoilBed_03": {
+        "min": [
+          -4.1450002,
+          0.552,
+          -1.45
+        ],
+        "max": [
+          4.7450002,
+          0.62,
+          -0.35
+        ],
+        "dimensions": [
+          8.8900003,
+          0.068,
+          1.1
+        ]
+      },
+      "SM_SoilBed_04": {
+        "min": [
+          -4.1450002,
+          0.552,
+          -3.2500001
+        ],
+        "max": [
+          4.7450002,
+          0.62,
+          -2.15
+        ],
+        "dimensions": [
+          8.8900003,
+          0.068,
+          1.1
+        ]
+      }
+    },
+    "dataSource": "SIMULATION"
+  },
+  "observations": [
+    {
+      "businessId": "temperature",
+      "anchorNode": "Anchor_Temperature",
+      "nodeIndex": 7,
+      "positionGLB": [
+        -3.75,
+        1.25,
+        3.1800001
+      ],
+      "unit": "°C",
+      "dataSource": "SENSOR",
+      "sensor": "DS18B20",
+      "reportedValueSource": "snapshot.o[0][0]",
+      "validitySource": "snapshot.o[0][1]",
+      "sampledAtUtcMsSource": "snapshot.o[0][2]",
+      "sampledUptimeMsSource": "snapshot.o[0][3]",
+      "validityCodes": {
+        "0": "NOT_READY",
+        "1": "VALID",
+        "2": "READ_ERROR"
+      },
+      "installationPositionSource": "DESIGN_DEMO"
+    },
+    {
+      "businessId": "humidity",
+      "anchorNode": "Anchor_Humidity",
+      "nodeIndex": 2,
+      "positionGLB": [
+        -3.75,
+        1.25,
+        3.1800001
+      ],
+      "unit": "%",
+      "dataSource": "SENSOR",
+      "sensor": "DHT11",
+      "reportedValueSource": "snapshot.o[1][0]",
+      "validitySource": "snapshot.o[1][1]",
+      "sampledAtUtcMsSource": "snapshot.o[1][2]",
+      "sampledUptimeMsSource": "snapshot.o[1][3]",
+      "validityCodes": {
+        "0": "NOT_READY",
+        "1": "VALID",
+        "2": "READ_ERROR"
+      },
+      "installationPositionSource": "DESIGN_DEMO"
+    },
+    {
+      "businessId": "lightLevel",
+      "anchorNode": "Anchor_LightLevel",
+      "nodeIndex": 4,
+      "positionGLB": [
+        -3.75,
+        1.25,
+        1.38
+      ],
+      "unit": "level",
+      "dataSource": "EXPERIMENT",
+      "sensor": "电位器ADC实验档位",
+      "reportedValueSource": "snapshot.o[2][0]",
+      "validitySource": "snapshot.o[2][1]",
+      "sampledAtUtcMsSource": "snapshot.o[2][2]",
+      "sampledUptimeMsSource": "snapshot.o[2][3]",
+      "validityCodes": {
+        "0": "NOT_READY",
+        "1": "VALID",
+        "2": "READ_ERROR"
+      },
+      "installationPositionSource": "DESIGN_DEMO",
+      "range": [
+        0,
+        7
+      ],
+      "notLux": true
+    },
+    {
+      "businessId": "soilHumidity",
+      "anchorNode": "Anchor_SoilHumidity",
+      "nodeIndex": 6,
+      "positionGLB": [
+        -4.0300002,
+        0.7,
+        2.95
+      ],
+      "unit": "%",
+      "dataSource": "SIMULATION",
+      "sensor": null,
+      "reportedValueSource": "snapshot.o[3][0]",
+      "validitySource": "snapshot.o[3][1]",
+      "sampledAtUtcMsSource": "snapshot.o[3][2]",
+      "sampledUptimeMsSource": "snapshot.o[3][3]",
+      "validityCodes": {
+        "0": "NOT_READY",
+        "1": "VALID",
+        "2": "READ_ERROR"
+      },
+      "installationPositionSource": "DESIGN_DEMO",
+      "range": [
+        0,
+        100
+      ],
+      "notMeasured": true
+    }
+  ],
+  "controller": {
+    "rootNode": "Controller_Root",
+    "mesh": "SM_Controller_01",
+    "anchor": {
+      "node": "Anchor_Controller",
+      "nodeIndex": 0,
+      "parentNode": "Anchors_Root",
+      "translation": [
+        -5.940000057220459,
+        1.8300000429153442,
+        -2.5
+      ],
+      "rotationQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "worldPosition": [
+        -5.9400001,
+        1.83,
+        -2.5
+      ]
+    },
+    "role": "参考外观复刻的ESP32控制柜演示陈设，不保存密钥"
+  },
+  "allAnchors": {
+    "Anchor_Temperature": {
+      "node": "Anchor_Temperature",
+      "nodeIndex": 7,
+      "parentNode": "Anchors_Root",
+      "translation": [
+        -3.75,
+        1.25,
+        3.180000066757202
+      ],
+      "rotationQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "worldPosition": [
+        -3.75,
+        1.25,
+        3.1800001
+      ]
+    },
+    "Anchor_Humidity": {
+      "node": "Anchor_Humidity",
+      "nodeIndex": 2,
+      "parentNode": "Anchors_Root",
+      "translation": [
+        -3.75,
+        1.25,
+        3.180000066757202
+      ],
+      "rotationQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "worldPosition": [
+        -3.75,
+        1.25,
+        3.1800001
+      ]
+    },
+    "Anchor_LightLevel": {
+      "node": "Anchor_LightLevel",
+      "nodeIndex": 4,
+      "parentNode": "Anchors_Root",
+      "translation": [
+        -3.75,
+        1.25,
+        1.3799999952316284
+      ],
+      "rotationQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "worldPosition": [
+        -3.75,
+        1.25,
+        1.38
+      ]
+    },
+    "Anchor_SoilHumidity": {
+      "node": "Anchor_SoilHumidity",
+      "nodeIndex": 6,
+      "parentNode": "Anchors_Root",
+      "translation": [
+        -4.03000020980835,
+        0.699999988079071,
+        2.950000047683716
+      ],
+      "rotationQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "worldPosition": [
+        -4.0300002,
+        0.7,
+        2.95
+      ]
+    },
+    "Anchor_Pump": {
+      "node": "Anchor_Pump",
+      "nodeIndex": 5,
+      "parentNode": "Anchors_Root",
+      "translation": [
+        -5.25,
+        1.1200000047683716,
+        3.200000047683716
+      ],
+      "rotationQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "worldPosition": [
+        -5.25,
+        1.12,
+        3.2
+      ]
+    },
+    "Anchor_Lamp": {
+      "node": "Anchor_Lamp",
+      "nodeIndex": 3,
+      "parentNode": "Anchors_Root",
+      "translation": [
+        -1.7999999523162842,
+        2.4000000953674316,
+        0.8999999761581421
+      ],
+      "rotationQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "worldPosition": [
+        -1.8,
+        2.4000001,
+        0.9
+      ]
+    },
+    "Anchor_Fan": {
+      "node": "Anchor_Fan",
+      "nodeIndex": 1,
+      "parentNode": "Anchors_Root",
+      "translation": [
+        5.925000190734863,
+        2.0250000953674316,
+        0
+      ],
+      "rotationQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "worldPosition": [
+        5.9250002,
+        2.0250001,
+        0
+      ]
+    },
+    "Anchor_Controller": {
+      "node": "Anchor_Controller",
+      "nodeIndex": 0,
+      "parentNode": "Anchors_Root",
+      "translation": [
+        -5.940000057220459,
+        1.8300000429153442,
+        -2.5
+      ],
+      "rotationQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "worldPosition": [
+        -5.9400001,
+        1.83,
+        -2.5
+      ]
+    }
+  },
+  "camera": {
+    "coordinateSystem": "GLB_Y_UP",
+    "position": [
+      -15,
+      11,
+      13
+    ],
+    "target": [
+      0,
+      1.25,
+      0
+    ],
+    "observationDistance": 22.1147575,
+    "projection": "ORTHOGRAPHIC",
+    "lensMillimetres": null,
+    "orthographicScaleMetres": 18.799999237060547,
+    "sourceCameraNode": "CAM_Overview",
+    "sourceCameraExcludedFromGLB": true,
+    "roofDefaultShown": true
+  },
+  "runtime": {
+    "stateModel": "GreenhouseTwinState",
+    "networkRequestsInsideModel": false,
+    "secretsInsideModel": false,
+    "coldStartReported": "UNKNOWN",
+    "initialSync": "INITIAL_SYNC",
+    "defaultVisuals": "正式资产视觉关闭防止首次同步误显示开启；不等同确认设备Reported=OFF",
+    "observationSource": "最新有效完整snapshot.o；不可把无效独立标量旧值视为当前读数",
+    "actuatorSource": "最新有效完整snapshot.a，顺序pump/lamp/fan",
+    "commandRules": {
+      "pendingSeparatedFromCurrentReported": true,
+      "commandIdMustMatch": true,
+      "completionRequiresExistingDeviceResultRule": true,
+      "buttonOrHTTPOrSentSuccessDoesNotChangeReported": true,
+      "mode": "MANUAL",
+      "autoRejected": "UNSUPPORTED_MODE"
+    },
+    "offlineAndExpired": {
+      "retainExplicitOfflineOrStaleMeaning": true,
+      "stopActiveVisualHints": true,
+      "doNotPresentAsLiveOnline": true
+    },
+    "replay": {
+      "useHistoricalState": true,
+      "realControlAllowed": false
+    },
+    "animations": {
+      "driver": "运行时最新有效Reported状态",
+      "autoPlay": false,
+      "embeddedAnimationsCount": 0
+    },
+    "designDemo": {
+      "classification": "DESIGN_DEMO",
+      "hardwareAcceptanceEvidence": false,
+      "noMeasuredPressureFlowOrRpm": true
+    }
+  },
+  "nodeInventory": [
+    {
+      "name": "Anchor_Controller",
+      "index": 0,
+      "parent": "Anchors_Root",
+      "mesh": null,
+      "extras": {
+        "placementSource": "DESIGN_DEMO；非实测安装坐标"
+      },
+      "initialTransform": {
+        "node": "Anchor_Controller",
+        "nodeIndex": 0,
+        "parentNode": "Anchors_Root",
+        "translation": [
+          -5.940000057220459,
+          1.8300000429153442,
+          -2.5
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          -5.9400001,
+          1.83,
+          -2.5
+        ]
+      }
+    },
+    {
+      "name": "Anchor_Fan",
+      "index": 1,
+      "parent": "Anchors_Root",
+      "mesh": null,
+      "extras": {
+        "placementSource": "DESIGN_DEMO；非实测安装坐标"
+      },
+      "initialTransform": {
+        "node": "Anchor_Fan",
+        "nodeIndex": 1,
+        "parentNode": "Anchors_Root",
+        "translation": [
+          5.925000190734863,
+          2.0250000953674316,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          5.9250002,
+          2.0250001,
+          0
+        ]
+      }
+    },
+    {
+      "name": "Anchor_Humidity",
+      "index": 2,
+      "parent": "Anchors_Root",
+      "mesh": null,
+      "extras": {
+        "placementSource": "DESIGN_DEMO；非实测安装坐标"
+      },
+      "initialTransform": {
+        "node": "Anchor_Humidity",
+        "nodeIndex": 2,
+        "parentNode": "Anchors_Root",
+        "translation": [
+          -3.75,
+          1.25,
+          3.180000066757202
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          -3.75,
+          1.25,
+          3.1800001
+        ]
+      }
+    },
+    {
+      "name": "Anchor_Lamp",
+      "index": 3,
+      "parent": "Anchors_Root",
+      "mesh": null,
+      "extras": {
+        "placementSource": "DESIGN_DEMO；非实测安装坐标"
+      },
+      "initialTransform": {
+        "node": "Anchor_Lamp",
+        "nodeIndex": 3,
+        "parentNode": "Anchors_Root",
+        "translation": [
+          -1.7999999523162842,
+          2.4000000953674316,
+          0.8999999761581421
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          -1.8,
+          2.4000001,
+          0.9
+        ]
+      }
+    },
+    {
+      "name": "Anchor_LightLevel",
+      "index": 4,
+      "parent": "Anchors_Root",
+      "mesh": null,
+      "extras": {
+        "placementSource": "DESIGN_DEMO；非实测安装坐标",
+        "observationSource": "EXPERIMENT；ADC档位0—7，非Lux"
+      },
+      "initialTransform": {
+        "node": "Anchor_LightLevel",
+        "nodeIndex": 4,
+        "parentNode": "Anchors_Root",
+        "translation": [
+          -3.75,
+          1.25,
+          1.3799999952316284
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          -3.75,
+          1.25,
+          1.38
+        ]
+      }
+    },
+    {
+      "name": "Anchor_Pump",
+      "index": 5,
+      "parent": "Anchors_Root",
+      "mesh": null,
+      "extras": {
+        "placementSource": "DESIGN_DEMO；非实测安装坐标"
+      },
+      "initialTransform": {
+        "node": "Anchor_Pump",
+        "nodeIndex": 5,
+        "parentNode": "Anchors_Root",
+        "translation": [
+          -5.25,
+          1.1200000047683716,
+          3.200000047683716
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          -5.25,
+          1.12,
+          3.2
+        ]
+      }
+    },
+    {
+      "name": "Anchor_SoilHumidity",
+      "index": 6,
+      "parent": "Anchors_Root",
+      "mesh": null,
+      "extras": {
+        "placementSource": "DESIGN_DEMO；非实测安装坐标",
+        "observationSource": "SIMULATION"
+      },
+      "initialTransform": {
+        "node": "Anchor_SoilHumidity",
+        "nodeIndex": 6,
+        "parentNode": "Anchors_Root",
+        "translation": [
+          -4.03000020980835,
+          0.699999988079071,
+          2.950000047683716
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          -4.0300002,
+          0.7,
+          2.95
+        ]
+      }
+    },
+    {
+      "name": "Anchor_Temperature",
+      "index": 7,
+      "parent": "Anchors_Root",
+      "mesh": null,
+      "extras": {
+        "placementSource": "DESIGN_DEMO；非实测安装坐标"
+      },
+      "initialTransform": {
+        "node": "Anchor_Temperature",
+        "nodeIndex": 7,
+        "parentNode": "Anchors_Root",
+        "translation": [
+          -3.75,
+          1.25,
+          3.180000066757202
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          -3.75,
+          1.25,
+          3.1800001
+        ]
+      }
+    },
+    {
+      "name": "Anchors_Root",
+      "index": 8,
+      "parent": "Greenhouse_Root",
+      "mesh": null,
+      "extras": {},
+      "initialTransform": {
+        "node": "Anchors_Root",
+        "nodeIndex": 8,
+        "parentNode": "Greenhouse_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_Controller_01",
+      "index": 9,
+      "parent": "Controller_Root",
+      "mesh": 0,
+      "extras": {
+        "displayMeaning": "DESIGN_DEMO；装饰屏面非实时数据或业务标识",
+        "reference": "06-control-cabinet.png"
+      },
+      "initialTransform": {
+        "node": "SM_Controller_01",
+        "nodeIndex": 9,
+        "parentNode": "Controller_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_ControllerConduit_01",
+      "index": 10,
+      "parent": "Controller_Root",
+      "mesh": 1,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_ControllerConduit_01",
+        "nodeIndex": 10,
+        "parentNode": "Controller_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_ObservationMounts_01",
+      "index": 11,
+      "parent": "Controller_Root",
+      "mesh": 2,
+      "extras": {
+        "installationSource": "DESIGN_DEMO；环境盒形制为参考陈设，实际温湿观测仍来自开发板 DS18B20/DHT11",
+        "physicalSensorCountClaimed": false
+      },
+      "initialTransform": {
+        "node": "SM_ObservationMounts_01",
+        "nodeIndex": 11,
+        "parentNode": "Controller_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_SoilProbe_DesignDemo",
+      "index": 12,
+      "parent": "Controller_Root",
+      "mesh": 3,
+      "extras": {
+        "dataSource": "SIMULATION",
+        "hardwareConnected": false,
+        "assetRole": "DESIGN_DEMO；土壤探针外观陈设，不增加真实传感器标识"
+      },
+      "initialTransform": {
+        "node": "SM_SoilProbe_DesignDemo",
+        "nodeIndex": 12,
+        "parentNode": "Controller_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "Controller_Root",
+      "index": 13,
+      "parent": "Greenhouse_Root",
+      "mesh": null,
+      "extras": {},
+      "initialTransform": {
+        "node": "Controller_Root",
+        "nodeIndex": 13,
+        "parentNode": "Greenhouse_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_FanGuard_01",
+      "index": 14,
+      "parent": "Fan_Root",
+      "mesh": 4,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_FanGuard_01",
+        "nodeIndex": 14,
+        "parentNode": "Fan_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_FanHousing_01",
+      "index": 15,
+      "parent": "Fan_Root",
+      "mesh": 5,
+      "extras": {
+        "mount": "正 X 短墙真实圆孔、上下支架与螺栓"
+      },
+      "initialTransform": {
+        "node": "SM_FanHousing_01",
+        "nodeIndex": 15,
+        "parentNode": "Fan_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_FanRotor_01",
+      "index": 16,
+      "parent": "Fan_Root",
+      "mesh": 6,
+      "extras": {
+        "rotationAxisLocal": [
+          1,
+          0,
+          0
+        ],
+        "defaultStopped": true,
+        "runtimeAnimation": "由最新有效 Reported 状态驱动；无自动循环动画"
+      },
+      "initialTransform": {
+        "node": "SM_FanRotor_01",
+        "nodeIndex": 16,
+        "parentNode": "Fan_Root",
+        "translation": [
+          5.925000190734863,
+          2.0250000953674316,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          5.9250002,
+          2.0250001,
+          0
+        ]
+      }
+    },
+    {
+      "name": "Fan_Root",
+      "index": 17,
+      "parent": "Greenhouse_Root",
+      "mesh": null,
+      "extras": {},
+      "initialTransform": {
+        "node": "Fan_Root",
+        "nodeIndex": 17,
+        "parentNode": "Greenhouse_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_ChannelCover_Fixed_01",
+      "index": 18,
+      "parent": "Channel_Covers_Root",
+      "mesh": 7,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_ChannelCover_Fixed_01",
+        "nodeIndex": 18,
+        "parentNode": "Channel_Covers_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_ChannelCover_Inspection_01",
+      "index": 19,
+      "parent": "Channel_Covers_Root",
+      "mesh": 8,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_ChannelCover_Inspection_01",
+        "nodeIndex": 19,
+        "parentNode": "Channel_Covers_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_ChannelCover_PumpInspection_01",
+      "index": 20,
+      "parent": "Channel_Covers_Root",
+      "mesh": 9,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_ChannelCover_PumpInspection_01",
+        "nodeIndex": 20,
+        "parentNode": "Channel_Covers_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "Channel_Covers_Root",
+      "index": 21,
+      "parent": "Irrigation_Root",
+      "mesh": null,
+      "extras": {},
+      "initialTransform": {
+        "node": "Channel_Covers_Root",
+        "nodeIndex": 21,
+        "parentNode": "Irrigation_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_IrrigationPipework_01",
+      "index": 22,
+      "parent": "Irrigation_Root",
+      "mesh": 10,
+      "extras": {
+        "routing": "主管在地面管槽内；床头支管接每床两根细滴灌管",
+        "layoutSource": "DESIGN_DEMO"
+      },
+      "initialTransform": {
+        "node": "SM_IrrigationPipework_01",
+        "nodeIndex": 22,
+        "parentNode": "Irrigation_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "Irrigation_Root",
+      "index": 23,
+      "parent": "Greenhouse_Root",
+      "mesh": null,
+      "extras": {},
+      "initialTransform": {
+        "node": "Irrigation_Root",
+        "nodeIndex": 23,
+        "parentNode": "Greenhouse_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_Lamp_01",
+      "index": 24,
+      "parent": "Lamp_Root",
+      "mesh": 11,
+      "extras": {
+        "reference": "04-lamp.png；服从整体图统一为四床每床单根长条灯"
+      },
+      "initialTransform": {
+        "node": "SM_Lamp_01",
+        "nodeIndex": 24,
+        "parentNode": "Lamp_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_LampGlow_01",
+      "index": 25,
+      "parent": "Lamp_Root",
+      "mesh": 12,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_LampGlow_01",
+        "nodeIndex": 25,
+        "parentNode": "Lamp_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_LampMounts_01",
+      "index": 26,
+      "parent": "Lamp_Root",
+      "mesh": 13,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_LampMounts_01",
+        "nodeIndex": 26,
+        "parentNode": "Lamp_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_LampSupportRails_01",
+      "index": 27,
+      "parent": "Lamp_Root",
+      "mesh": 14,
+      "extras": {
+        "independentFromRoof": true
+      },
+      "initialTransform": {
+        "node": "SM_LampSupportRails_01",
+        "nodeIndex": 27,
+        "parentNode": "Lamp_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "Lamp_Root",
+      "index": 28,
+      "parent": "Greenhouse_Root",
+      "mesh": null,
+      "extras": {},
+      "initialTransform": {
+        "node": "Lamp_Root",
+        "nodeIndex": 28,
+        "parentNode": "Greenhouse_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_Crops_Bed_01",
+      "index": 29,
+      "parent": "Planting_Root",
+      "mesh": 15,
+      "extras": {
+        "作物类型": "三变体八叶直立宽叶菜",
+        "植株数量": 40,
+        "三角面数量": 12960,
+        "素材来源": "DESIGN_DEMO，自建几何及自建叶脉贴图"
+      },
+      "initialTransform": {
+        "node": "SM_Crops_Bed_01",
+        "nodeIndex": 29,
+        "parentNode": "Planting_Root",
+        "translation": [
+          0.30000001192092896,
+          0.6200000047683716,
+          2.700000047683716
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0.3,
+          0.62,
+          2.7
+        ]
+      }
+    },
+    {
+      "name": "SM_Crops_Bed_02",
+      "index": 30,
+      "parent": "Planting_Root",
+      "mesh": 16,
+      "extras": {
+        "作物类型": "三变体八叶直立宽叶菜",
+        "植株数量": 40,
+        "三角面数量": 12960,
+        "素材来源": "DESIGN_DEMO，自建几何及自建叶脉贴图"
+      },
+      "initialTransform": {
+        "node": "SM_Crops_Bed_02",
+        "nodeIndex": 30,
+        "parentNode": "Planting_Root",
+        "translation": [
+          0.30000001192092896,
+          0.6200000047683716,
+          0.8999999761581421
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0.3,
+          0.62,
+          0.9
+        ]
+      }
+    },
+    {
+      "name": "SM_Crops_Bed_03",
+      "index": 31,
+      "parent": "Planting_Root",
+      "mesh": 17,
+      "extras": {
+        "作物类型": "三变体八叶直立宽叶菜",
+        "植株数量": 40,
+        "三角面数量": 12960,
+        "素材来源": "DESIGN_DEMO，自建几何及自建叶脉贴图"
+      },
+      "initialTransform": {
+        "node": "SM_Crops_Bed_03",
+        "nodeIndex": 31,
+        "parentNode": "Planting_Root",
+        "translation": [
+          0.30000001192092896,
+          0.6200000047683716,
+          -0.8999999761581421
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0.3,
+          0.62,
+          -0.9
+        ]
+      }
+    },
+    {
+      "name": "SM_Crops_Bed_04",
+      "index": 32,
+      "parent": "Planting_Root",
+      "mesh": 15,
+      "extras": {
+        "作物类型": "三变体八叶直立宽叶菜",
+        "植株数量": 40,
+        "三角面数量": 12960,
+        "素材来源": "DESIGN_DEMO，自建几何及自建叶脉贴图"
+      },
+      "initialTransform": {
+        "node": "SM_Crops_Bed_04",
+        "nodeIndex": 32,
+        "parentNode": "Planting_Root",
+        "translation": [
+          0.30000001192092896,
+          0.6200000047683716,
+          -2.700000047683716
+        ],
+        "rotationQuaternion": [
+          0,
+          -1,
+          0,
+          4.371138828673793e-8
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0.3,
+          0.62,
+          -2.7
+        ]
+      }
+    },
+    {
+      "name": "SM_PlantingBed_01",
+      "index": 33,
+      "parent": "Planting_Root",
+      "mesh": 18,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_PlantingBed_01",
+        "nodeIndex": 33,
+        "parentNode": "Planting_Root",
+        "translation": [
+          0.30000001192092896,
+          0,
+          2.700000047683716
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0.3,
+          0,
+          2.7
+        ]
+      }
+    },
+    {
+      "name": "SM_PlantingBed_02",
+      "index": 34,
+      "parent": "Planting_Root",
+      "mesh": 19,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_PlantingBed_02",
+        "nodeIndex": 34,
+        "parentNode": "Planting_Root",
+        "translation": [
+          0.30000001192092896,
+          0,
+          0.8999999761581421
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0.3,
+          0,
+          0.9
+        ]
+      }
+    },
+    {
+      "name": "SM_PlantingBed_03",
+      "index": 35,
+      "parent": "Planting_Root",
+      "mesh": 20,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_PlantingBed_03",
+        "nodeIndex": 35,
+        "parentNode": "Planting_Root",
+        "translation": [
+          0.30000001192092896,
+          0,
+          -0.8999999761581421
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0.3,
+          0,
+          -0.9
+        ]
+      }
+    },
+    {
+      "name": "SM_PlantingBed_04",
+      "index": 36,
+      "parent": "Planting_Root",
+      "mesh": 21,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_PlantingBed_04",
+        "nodeIndex": 36,
+        "parentNode": "Planting_Root",
+        "translation": [
+          0.30000001192092896,
+          0,
+          -2.700000047683716
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0.3,
+          0,
+          -2.7
+        ]
+      }
+    },
+    {
+      "name": "SM_SoilBed_01",
+      "index": 37,
+      "parent": "Planting_Root",
+      "mesh": 22,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_SoilBed_01",
+        "nodeIndex": 37,
+        "parentNode": "Planting_Root",
+        "translation": [
+          0.30000001192092896,
+          0,
+          2.700000047683716
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0.3,
+          0,
+          2.7
+        ]
+      }
+    },
+    {
+      "name": "SM_SoilBed_02",
+      "index": 38,
+      "parent": "Planting_Root",
+      "mesh": 23,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_SoilBed_02",
+        "nodeIndex": 38,
+        "parentNode": "Planting_Root",
+        "translation": [
+          0.30000001192092896,
+          0,
+          0.8999999761581421
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0.3,
+          0,
+          0.9
+        ]
+      }
+    },
+    {
+      "name": "SM_SoilBed_03",
+      "index": 39,
+      "parent": "Planting_Root",
+      "mesh": 24,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_SoilBed_03",
+        "nodeIndex": 39,
+        "parentNode": "Planting_Root",
+        "translation": [
+          0.30000001192092896,
+          0,
+          -0.8999999761581421
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0.3,
+          0,
+          -0.9
+        ]
+      }
+    },
+    {
+      "name": "SM_SoilBed_04",
+      "index": 40,
+      "parent": "Planting_Root",
+      "mesh": 25,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_SoilBed_04",
+        "nodeIndex": 40,
+        "parentNode": "Planting_Root",
+        "translation": [
+          0.30000001192092896,
+          0,
+          -2.700000047683716
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0.3,
+          0,
+          -2.7
+        ]
+      }
+    },
+    {
+      "name": "Planting_Root",
+      "index": 41,
+      "parent": "Greenhouse_Root",
+      "mesh": null,
+      "extras": {},
+      "initialTransform": {
+        "node": "Planting_Root",
+        "nodeIndex": 41,
+        "parentNode": "Greenhouse_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_Pump_01",
+      "index": 42,
+      "parent": "Pump_Root",
+      "mesh": 26,
+      "extras": {
+        "pressureGauge": "DESIGN_DEMO；无实测压力、无数值标注",
+        "hardwareScope": "泵模型表达 X1/GPIO18 的外接 LED 业务状态",
+        "reference": "03-pump.png"
+      },
+      "initialTransform": {
+        "node": "SM_Pump_01",
+        "nodeIndex": 42,
+        "parentNode": "Pump_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_PumpBase_01",
+      "index": 43,
+      "parent": "Pump_Root",
+      "mesh": 27,
+      "extras": {
+        "placementSource": "DESIGN_DEMO；入口右侧低平台"
+      },
+      "initialTransform": {
+        "node": "SM_PumpBase_01",
+        "nodeIndex": 43,
+        "parentNode": "Pump_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_PumpFlow_01",
+      "index": 44,
+      "parent": "Pump_Root",
+      "mesh": 28,
+      "extras": {
+        "defaultVisible": false,
+        "semantic": "仅表示泵最新有效 Reported 开启；不表示流量或压力",
+        "intentionalOpenSurface": "双面虚拟水流标记，Alpha=0 为默认关闭"
+      },
+      "initialTransform": {
+        "node": "SM_PumpFlow_01",
+        "nodeIndex": 44,
+        "parentNode": "Pump_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_PumpIntake_01",
+      "index": 45,
+      "parent": "Pump_Root",
+      "mesh": 29,
+      "extras": {
+        "meaning": "演示吸入口，从地面接入；不表示真实供水接入"
+      },
+      "initialTransform": {
+        "node": "SM_PumpIntake_01",
+        "nodeIndex": 45,
+        "parentNode": "Pump_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "Pump_Root",
+      "index": 46,
+      "parent": "Greenhouse_Root",
+      "mesh": null,
+      "extras": {},
+      "initialTransform": {
+        "node": "Pump_Root",
+        "nodeIndex": 46,
+        "parentNode": "Greenhouse_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_GableGlass_01",
+      "index": 47,
+      "parent": "Roof_EndFrame_Root",
+      "mesh": 30,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_GableGlass_01",
+        "nodeIndex": 47,
+        "parentNode": "Roof_EndFrame_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_GablePosts_01",
+      "index": 48,
+      "parent": "Roof_EndFrame_Root",
+      "mesh": 31,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_GablePosts_01",
+        "nodeIndex": 48,
+        "parentNode": "Roof_EndFrame_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_RoofFrame_Ends_01",
+      "index": 49,
+      "parent": "Roof_EndFrame_Root",
+      "mesh": 32,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_RoofFrame_Ends_01",
+        "nodeIndex": 49,
+        "parentNode": "Roof_EndFrame_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "Roof_EndFrame_Root",
+      "index": 50,
+      "parent": "Roof_Root",
+      "mesh": null,
+      "extras": {},
+      "initialTransform": {
+        "node": "Roof_EndFrame_Root",
+        "nodeIndex": 50,
+        "parentNode": "Roof_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_RoofFrame_Far_01",
+      "index": 51,
+      "parent": "Roof_FarFrame_Root",
+      "mesh": 33,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_RoofFrame_Far_01",
+        "nodeIndex": 51,
+        "parentNode": "Roof_FarFrame_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "Roof_FarFrame_Root",
+      "index": 52,
+      "parent": "Roof_Root",
+      "mesh": null,
+      "extras": {},
+      "initialTransform": {
+        "node": "Roof_FarFrame_Root",
+        "nodeIndex": 52,
+        "parentNode": "Roof_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_RoofPanels_Far_01",
+      "index": 53,
+      "parent": "Roof_FarPanels_Root",
+      "mesh": 34,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_RoofPanels_Far_01",
+        "nodeIndex": 53,
+        "parentNode": "Roof_FarPanels_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "Roof_FarPanels_Root",
+      "index": 54,
+      "parent": "Roof_Root",
+      "mesh": null,
+      "extras": {},
+      "initialTransform": {
+        "node": "Roof_FarPanels_Root",
+        "nodeIndex": 54,
+        "parentNode": "Roof_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_RoofFrame_Near_01",
+      "index": 55,
+      "parent": "Roof_NearFrame_Root",
+      "mesh": 35,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_RoofFrame_Near_01",
+        "nodeIndex": 55,
+        "parentNode": "Roof_NearFrame_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "Roof_NearFrame_Root",
+      "index": 56,
+      "parent": "Roof_Root",
+      "mesh": null,
+      "extras": {},
+      "initialTransform": {
+        "node": "Roof_NearFrame_Root",
+        "nodeIndex": 56,
+        "parentNode": "Roof_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_RoofPanels_Near_01",
+      "index": 57,
+      "parent": "Roof_NearPanels_Root",
+      "mesh": 36,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_RoofPanels_Near_01",
+        "nodeIndex": 57,
+        "parentNode": "Roof_NearPanels_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "Roof_NearPanels_Root",
+      "index": 58,
+      "parent": "Roof_Root",
+      "mesh": null,
+      "extras": {},
+      "initialTransform": {
+        "node": "Roof_NearPanels_Root",
+        "nodeIndex": 58,
+        "parentNode": "Roof_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "Roof_Root",
+      "index": 59,
+      "parent": "Greenhouse_Root",
+      "mesh": null,
+      "extras": {},
+      "initialTransform": {
+        "node": "Roof_Root",
+        "nodeIndex": 59,
+        "parentNode": "Greenhouse_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_Enclosure_Ends_01",
+      "index": 60,
+      "parent": "Enclosure_Ends_Root",
+      "mesh": 37,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_Enclosure_Ends_01",
+        "nodeIndex": 60,
+        "parentNode": "Enclosure_Ends_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "Enclosure_Ends_Root",
+      "index": 61,
+      "parent": "Structure_Root",
+      "mesh": null,
+      "extras": {},
+      "initialTransform": {
+        "node": "Enclosure_Ends_Root",
+        "nodeIndex": 61,
+        "parentNode": "Structure_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_Enclosure_Far_01",
+      "index": 62,
+      "parent": "Enclosure_Far_Root",
+      "mesh": 38,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_Enclosure_Far_01",
+        "nodeIndex": 62,
+        "parentNode": "Enclosure_Far_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_StructureFrameFar_01",
+      "index": 63,
+      "parent": "Enclosure_Far_Root",
+      "mesh": 39,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_StructureFrameFar_01",
+        "nodeIndex": 63,
+        "parentNode": "Enclosure_Far_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "Enclosure_Far_Root",
+      "index": 64,
+      "parent": "Structure_Root",
+      "mesh": null,
+      "extras": {},
+      "initialTransform": {
+        "node": "Enclosure_Far_Root",
+        "nodeIndex": 64,
+        "parentNode": "Structure_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_Enclosure_Near_01",
+      "index": 65,
+      "parent": "Enclosure_Near_Root",
+      "mesh": 40,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_Enclosure_Near_01",
+        "nodeIndex": 65,
+        "parentNode": "Enclosure_Near_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_FrameConnectionsNear_01",
+      "index": 66,
+      "parent": "Enclosure_Near_Root",
+      "mesh": 41,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_FrameConnectionsNear_01",
+        "nodeIndex": 66,
+        "parentNode": "Enclosure_Near_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_StructureFrameNear_01",
+      "index": 67,
+      "parent": "Enclosure_Near_Root",
+      "mesh": 42,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_StructureFrameNear_01",
+        "nodeIndex": 67,
+        "parentNode": "Enclosure_Near_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "Enclosure_Near_Root",
+      "index": 68,
+      "parent": "Structure_Root",
+      "mesh": null,
+      "extras": {},
+      "initialTransform": {
+        "node": "Enclosure_Near_Root",
+        "nodeIndex": 68,
+        "parentNode": "Structure_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_Base_01",
+      "index": 69,
+      "parent": "Structure_Root",
+      "mesh": 43,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_Base_01",
+        "nodeIndex": 69,
+        "parentNode": "Structure_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_Door_01",
+      "index": 70,
+      "parent": "Structure_Root",
+      "mesh": 44,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_Door_01",
+        "nodeIndex": 70,
+        "parentNode": "Structure_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_DoorFrame_01",
+      "index": 71,
+      "parent": "Structure_Root",
+      "mesh": 45,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_DoorFrame_01",
+        "nodeIndex": 71,
+        "parentNode": "Structure_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_FloorTiles_01",
+      "index": 72,
+      "parent": "Structure_Root",
+      "mesh": 46,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_FloorTiles_01",
+        "nodeIndex": 72,
+        "parentNode": "Structure_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_FrameConnections_01",
+      "index": 73,
+      "parent": "Structure_Root",
+      "mesh": 47,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_FrameConnections_01",
+        "nodeIndex": 73,
+        "parentNode": "Structure_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "SM_StructureFrame_01",
+      "index": 74,
+      "parent": "Structure_Root",
+      "mesh": 48,
+      "extras": {},
+      "initialTransform": {
+        "node": "SM_StructureFrame_01",
+        "nodeIndex": 74,
+        "parentNode": "Structure_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "Structure_Root",
+      "index": 75,
+      "parent": "Greenhouse_Root",
+      "mesh": null,
+      "extras": {},
+      "initialTransform": {
+        "node": "Structure_Root",
+        "nodeIndex": 75,
+        "parentNode": "Greenhouse_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "Greenhouse_Root",
+      "index": 76,
+      "parent": null,
+      "mesh": null,
+      "extras": {
+        "units": "meter",
+        "designDimensions": [
+          12,
+          8,
+          2.8,
+          4
+        ],
+        "assetVersion": "2.0.0",
+        "assetId": "greenhouse-v2"
+      },
+      "initialTransform": {
+        "node": "Greenhouse_Root",
+        "nodeIndex": 76,
+        "parentNode": null,
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "materialInventory": [
+    {
+      "name": "MAT_Metal_Silver",
+      "index": 0
+    },
+    {
+      "name": "MAT_Rubber_Dark",
+      "index": 1
+    },
+    {
+      "name": "MAT_Accent_Cyan",
+      "index": 2
+    },
+    {
+      "name": "MAT_Sensor_White",
+      "index": 3
+    },
+    {
+      "name": "MAT_Metal_Stainless",
+      "index": 4
+    },
+    {
+      "name": "MAT_Concrete_Base",
+      "index": 5
+    },
+    {
+      "name": "MAT_Pipe_Charcoal",
+      "index": 6
+    },
+    {
+      "name": "MAT_Valve_Orange",
+      "index": 7
+    },
+    {
+      "name": "MAT_Equipment_Grey",
+      "index": 8
+    },
+    {
+      "name": "MAT_Lamp_Emission",
+      "index": 9
+    },
+    {
+      "name": "MAT_Leaf_Green",
+      "index": 10
+    },
+    {
+      "name": "MAT_Leaf_DeepGreen",
+      "index": 11
+    },
+    {
+      "name": "MAT_Bed_Graphite",
+      "index": 12
+    },
+    {
+      "name": "MAT_Soil_Independent",
+      "index": 13
+    },
+    {
+      "name": "MAT_PumpFlow_Virtual",
+      "index": 14
+    },
+    {
+      "name": "MAT_Glass_Enclosure",
+      "index": 15
+    }
+  ],
+  "referenceDocuments": [
+    "../validation/contract-audit.json",
+    "../validation/reference-analysis.json"
+  ],
+  "android": {
+    "rendererDirection": "SceneView / Filament",
+    "implementationVersionPendingUserConfirmation": true,
+    "deviceRuntimeVerification": "NOT_EXECUTED",
+    "fpsAndGpuClaims": false
+  },
+  "displayGroups": {
+    "Enclosure_Near_Root": {
+      "node": "Enclosure_Near_Root",
+      "nodeIndex": 68,
+      "descendantNodes": [
+        "Enclosure_Near_Root",
+        "SM_Enclosure_Near_01",
+        "SM_FrameConnectionsNear_01",
+        "SM_StructureFrameNear_01"
+      ],
+      "initialTransform": {
+        "node": "Enclosure_Near_Root",
+        "nodeIndex": 68,
+        "parentNode": "Structure_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "Enclosure_Far_Root": {
+      "node": "Enclosure_Far_Root",
+      "nodeIndex": 64,
+      "descendantNodes": [
+        "Enclosure_Far_Root",
+        "SM_Enclosure_Far_01",
+        "SM_StructureFrameFar_01"
+      ],
+      "initialTransform": {
+        "node": "Enclosure_Far_Root",
+        "nodeIndex": 64,
+        "parentNode": "Structure_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "Enclosure_Ends_Root": {
+      "node": "Enclosure_Ends_Root",
+      "nodeIndex": 61,
+      "descendantNodes": [
+        "Enclosure_Ends_Root",
+        "SM_Enclosure_Ends_01"
+      ],
+      "initialTransform": {
+        "node": "Enclosure_Ends_Root",
+        "nodeIndex": 61,
+        "parentNode": "Structure_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "Roof_NearPanels_Root": {
+      "node": "Roof_NearPanels_Root",
+      "nodeIndex": 58,
+      "descendantNodes": [
+        "Roof_NearPanels_Root",
+        "SM_RoofPanels_Near_01"
+      ],
+      "initialTransform": {
+        "node": "Roof_NearPanels_Root",
+        "nodeIndex": 58,
+        "parentNode": "Roof_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "Roof_FarPanels_Root": {
+      "node": "Roof_FarPanels_Root",
+      "nodeIndex": 54,
+      "descendantNodes": [
+        "Roof_FarPanels_Root",
+        "SM_RoofPanels_Far_01"
+      ],
+      "initialTransform": {
+        "node": "Roof_FarPanels_Root",
+        "nodeIndex": 54,
+        "parentNode": "Roof_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "Roof_NearFrame_Root": {
+      "node": "Roof_NearFrame_Root",
+      "nodeIndex": 56,
+      "descendantNodes": [
+        "Roof_NearFrame_Root",
+        "SM_RoofFrame_Near_01"
+      ],
+      "initialTransform": {
+        "node": "Roof_NearFrame_Root",
+        "nodeIndex": 56,
+        "parentNode": "Roof_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "Roof_FarFrame_Root": {
+      "node": "Roof_FarFrame_Root",
+      "nodeIndex": 52,
+      "descendantNodes": [
+        "Roof_FarFrame_Root",
+        "SM_RoofFrame_Far_01"
+      ],
+      "initialTransform": {
+        "node": "Roof_FarFrame_Root",
+        "nodeIndex": 52,
+        "parentNode": "Roof_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "Roof_EndFrame_Root": {
+      "node": "Roof_EndFrame_Root",
+      "nodeIndex": 50,
+      "descendantNodes": [
+        "Roof_EndFrame_Root",
+        "SM_GableGlass_01",
+        "SM_GablePosts_01",
+        "SM_RoofFrame_Ends_01"
+      ],
+      "initialTransform": {
+        "node": "Roof_EndFrame_Root",
+        "nodeIndex": 50,
+        "parentNode": "Roof_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "Channel_Covers_Root": {
+      "node": "Channel_Covers_Root",
+      "nodeIndex": 21,
+      "descendantNodes": [
+        "Channel_Covers_Root",
+        "SM_ChannelCover_Fixed_01",
+        "SM_ChannelCover_Inspection_01",
+        "SM_ChannelCover_PumpInspection_01"
+      ],
+      "initialTransform": {
+        "node": "Channel_Covers_Root",
+        "nodeIndex": 21,
+        "parentNode": "Irrigation_Root",
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationQuaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "worldPosition": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "displayPresets": {
+    "complete": {
+      "title": "complete",
+      "hiddenNodes": [],
+      "shownNodes": [],
+      "camera": {
+        "coordinateSystem": "GLB_Y_UP",
+        "position": [
+          -15,
+          11,
+          13
+        ],
+        "target": [
+          0,
+          1.25,
+          0
+        ],
+        "observationDistance": 22.1147575,
+        "projection": "ORTHOGRAPHIC",
+        "lensMillimetres": null,
+        "orthographicScaleMetres": 18.799999237060547,
+        "sourceCameraNode": "CAM_Overview",
+        "sourceCameraExcludedFromGLB": true
+      },
+      "state": "DEFAULT_OFF",
+      "classification": "ASSET_PRESENTATION",
+      "hardwareAcceptanceEvidence": false,
+      "source": "同一个完整V2模型的可恢复可见性与相机预设",
+      "autoPlayback": false
+    },
+    "overview": {
+      "title": "overview",
+      "hiddenNodes": [
+        "Roof_NearPanels_Root",
+        "Roof_NearFrame_Root",
+        "Enclosure_Near_Root",
+        "SM_ChannelCover_Inspection_01",
+        "SM_ChannelCover_PumpInspection_01"
+      ],
+      "shownNodes": [],
+      "camera": {
+        "coordinateSystem": "GLB_Y_UP",
+        "position": [
+          -15,
+          11,
+          13
+        ],
+        "target": [
+          0,
+          1.25,
+          0
+        ],
+        "observationDistance": 22.1147575,
+        "projection": "ORTHOGRAPHIC",
+        "lensMillimetres": null,
+        "orthographicScaleMetres": 18.799999237060547,
+        "sourceCameraNode": "CAM_Overview",
+        "sourceCameraExcludedFromGLB": true
+      },
+      "state": "DEFAULT_OFF",
+      "classification": "ASSET_PRESENTATION",
+      "hardwareAcceptanceEvidence": false,
+      "source": "同一个完整V2模型的可恢复可见性与相机预设",
+      "autoPlayback": false
+    },
+    "interior": {
+      "title": "interior",
+      "hiddenNodes": [
+        "Roof_Root",
+        "Enclosure_Near_Root",
+        "SM_ChannelCover_Inspection_01",
+        "SM_ChannelCover_PumpInspection_01"
+      ],
+      "shownNodes": [],
+      "camera": {
+        "coordinateSystem": "GLB_Y_UP",
+        "position": [
+          -14,
+          13,
+          12
+        ],
+        "target": [
+          0,
+          1.1,
+          0
+        ],
+        "observationDistance": 21.9456146,
+        "projection": "ORTHOGRAPHIC",
+        "lensMillimetres": null,
+        "orthographicScaleMetres": 20.5,
+        "sourceCameraNode": "CAM_Interior",
+        "sourceCameraExcludedFromGLB": true
+      },
+      "state": "DEFAULT_OFF",
+      "classification": "ASSET_PRESENTATION",
+      "hardwareAcceptanceEvidence": false,
+      "source": "同一个完整V2模型的可恢复可见性与相机预设",
+      "autoPlayback": false
+    },
+    "top": {
+      "title": "top",
+      "hiddenNodes": [
+        "Roof_Root",
+        "SM_ChannelCover_Inspection_01"
+      ],
+      "shownNodes": [],
+      "camera": {
+        "coordinateSystem": "GLB_Y_UP",
+        "position": [
+          0,
+          21,
+          0
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "observationDistance": 21,
+        "projection": "ORTHOGRAPHIC",
+        "lensMillimetres": null,
+        "orthographicScaleMetres": 17.299999237060547,
+        "sourceCameraNode": "CAM_Top",
+        "sourceCameraExcludedFromGLB": true
+      },
+      "state": "DEFAULT_OFF",
+      "classification": "ASSET_PRESENTATION",
+      "hardwareAcceptanceEvidence": false,
+      "source": "同一个完整V2模型的可恢复可见性与相机预设",
+      "autoPlayback": false
+    },
+    "detail": {
+      "title": "detail",
+      "hiddenNodes": [
+        "Roof_Root",
+        "Enclosure_Near_Root",
+        "Enclosure_Ends_Root",
+        "SM_StructureFrame_01",
+        "SM_FrameConnections_01",
+        "SM_DoorFrame_01",
+        "SM_Door_01",
+        "SM_ChannelCover_Inspection_01",
+        "SM_ChannelCover_PumpInspection_01"
+      ],
+      "shownNodes": [],
+      "camera": {
+        "coordinateSystem": "GLB_Y_UP",
+        "position": [
+          -7.3499999,
+          1.7,
+          5.25
+        ],
+        "target": [
+          -5.22,
+          0.62,
+          3.16
+        ],
+        "observationDistance": 3.1735468,
+        "projection": "ORTHOGRAPHIC",
+        "lensMillimetres": null,
+        "orthographicScaleMetres": 3.299999952316284,
+        "sourceCameraNode": "CAM_Pump",
+        "sourceCameraExcludedFromGLB": true
+      },
+      "state": "DEFAULT_OFF",
+      "classification": "ASSET_PRESENTATION",
+      "hardwareAcceptanceEvidence": false,
+      "source": "同一个完整V2模型的可恢复可见性与相机预设",
+      "autoPlayback": false
+    }
+  },
+  "defaultDisplayPreset": "complete",
+  "demonstrationProps": [
+    {
+      "kind": "soilProbe",
+      "nodes": [
+        "SM_SoilProbe_DesignDemo"
+      ],
+      "meaning": "演示陈设，不代表实测或接入，soilHumidity仍SIMULATION",
+      "classification": "DESIGN_DEMO",
+      "hardwareConnected": false,
+      "changesExistingObservationSources": false
+    },
+    {
+      "kind": "pressureGauge",
+      "nodes": [
+        "SM_Pump_01"
+      ],
+      "meaning": "表针为静态陈设，不表达实测压力",
+      "classification": "DESIGN_DEMO",
+      "hardwareConnected": false,
+      "changesExistingObservationSources": false
+    },
+    {
+      "kind": "environmentHousing",
+      "nodes": [
+        "SM_ObservationMounts_01"
+      ],
+      "meaning": "外观演示，实际温湿光来源由既有契约决定",
+      "classification": "DESIGN_DEMO",
+      "hardwareConnected": false,
+      "changesExistingObservationSources": false
+    },
+    {
+      "kind": "controller",
+      "nodes": [
+        "SM_Controller_01"
+      ],
+      "meaning": "虚拟柜，不声称已接入实体控制柜",
+      "classification": "DESIGN_DEMO",
+      "hardwareConnected": false,
+      "changesExistingObservationSources": false
+    }
+  ],
+  "cameraInventory": {
+    "CAM_Overview": {
+      "coordinateSystem": "GLB_Y_UP",
+      "position": [
+        -15,
+        11,
+        13
+      ],
+      "target": [
+        0,
+        1.25,
+        0
+      ],
+      "observationDistance": 22.1147575,
+      "projection": "ORTHOGRAPHIC",
+      "lensMillimetres": null,
+      "orthographicScaleMetres": 18.799999237060547,
+      "sourceCameraNode": "CAM_Overview",
+      "sourceCameraExcludedFromGLB": true
+    },
+    "CAM_Interior": {
+      "coordinateSystem": "GLB_Y_UP",
+      "position": [
+        -14,
+        13,
+        12
+      ],
+      "target": [
+        0,
+        1.1,
+        0
+      ],
+      "observationDistance": 21.9456146,
+      "projection": "ORTHOGRAPHIC",
+      "lensMillimetres": null,
+      "orthographicScaleMetres": 20.5,
+      "sourceCameraNode": "CAM_Interior",
+      "sourceCameraExcludedFromGLB": true
+    },
+    "CAM_Top": {
+      "coordinateSystem": "GLB_Y_UP",
+      "position": [
+        0,
+        21,
+        0
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "observationDistance": 21,
+      "projection": "ORTHOGRAPHIC",
+      "lensMillimetres": null,
+      "orthographicScaleMetres": 17.299999237060547,
+      "sourceCameraNode": "CAM_Top",
+      "sourceCameraExcludedFromGLB": true
+    },
+    "CAM_Pump": {
+      "coordinateSystem": "GLB_Y_UP",
+      "position": [
+        -7.3499999,
+        1.7,
+        5.25
+      ],
+      "target": [
+        -5.22,
+        0.62,
+        3.16
+      ],
+      "observationDistance": 3.1735468,
+      "projection": "ORTHOGRAPHIC",
+      "lensMillimetres": null,
+      "orthographicScaleMetres": 3.299999952316284,
+      "sourceCameraNode": "CAM_Pump",
+      "sourceCameraExcludedFromGLB": true
+    },
+    "CAM_Lamp": {
+      "coordinateSystem": "GLB_Y_UP",
+      "position": [
+        -4.4000001,
+        3.8,
+        11
+      ],
+      "target": [
+        0.3,
+        2.4000001,
+        2.7
+      ],
+      "observationDistance": 9.6405394,
+      "projection": "PERSPECTIVE",
+      "lensMillimetres": 45,
+      "orthographicScaleMetres": null,
+      "sourceCameraNode": "CAM_Lamp",
+      "sourceCameraExcludedFromGLB": true
+    },
+    "CAM_Fan": {
+      "coordinateSystem": "GLB_Y_UP",
+      "position": [
+        4.5999999,
+        2.2,
+        0.45
+      ],
+      "target": [
+        5.925,
+        2.025,
+        0
+      ],
+      "observationDistance": 1.4102306,
+      "projection": "ORTHOGRAPHIC",
+      "lensMillimetres": null,
+      "orthographicScaleMetres": 2.950000047683716,
+      "sourceCameraNode": "CAM_Fan",
+      "sourceCameraExcludedFromGLB": true
+    },
+    "CAM_Controller": {
+      "coordinateSystem": "GLB_Y_UP",
+      "position": [
+        -8.3999996,
+        2.2,
+        -1.2
+      ],
+      "target": [
+        -5.78,
+        0.97,
+        -2.5
+      ],
+      "observationDistance": 3.1729006,
+      "projection": "ORTHOGRAPHIC",
+      "lensMillimetres": null,
+      "orthographicScaleMetres": 3.549999952316284,
+      "sourceCameraNode": "CAM_Controller",
+      "sourceCameraExcludedFromGLB": true
+    },
+    "CAM_Sensors": {
+      "coordinateSystem": "GLB_Y_UP",
+      "position": [
+        -5.25,
+        2,
+        4.5
+      ],
+      "target": [
+        -3.9,
+        1,
+        3
+      ],
+      "observationDistance": 2.2522211,
+      "projection": "ORTHOGRAPHIC",
+      "lensMillimetres": null,
+      "orthographicScaleMetres": 1.600000023841858,
+      "sourceCameraNode": "CAM_Sensors",
+      "sourceCameraExcludedFromGLB": true
+    },
+    "CAM_Bed": {
+      "coordinateSystem": "GLB_Y_UP",
+      "position": [
+        -6,
+        2.05,
+        6
+      ],
+      "target": [
+        -2.9,
+        0.79,
+        2.7
+      ],
+      "observationDistance": 4.6997447,
+      "projection": "ORTHOGRAPHIC",
+      "lensMillimetres": null,
+      "orthographicScaleMetres": 3.799999952316284,
+      "sourceCameraNode": "CAM_Bed",
+      "sourceCameraExcludedFromGLB": true
+    }
+  },
+  "gltfExtensions": {
+    "used": [
+      "KHR_materials_emissive_strength"
+    ],
+    "required": []
+  },
+  "displayPresetApplication": {
+    "resetToCompleteBeforeApply": true,
+    "visibilityRule": "先恢复Greenhouse_Root完整子树可见，再隐藏当前预设hiddenNodes；预设切换使用完整状态，不采用增量残留",
+    "deviceMaterialStateIndependent": true,
+    "defaultFlowAlpha": 0,
+    "defaultLampEmission": 0
+  },
+  "assetMetadata": {
+    "gltfAsset": {
+      "generator": "Khronos glTF Blender I/O v5.2.40",
+      "version": "2.0"
+    },
+    "rootExtras": {
+      "units": "meter",
+      "designDimensions": [
+        12,
+        8,
+        2.8,
+        4
+      ],
+      "assetVersion": "2.0.0",
+      "assetId": "greenhouse-v2"
+    },
+    "source": "读取本轮实际GLB的asset及Greenhouse_Root.extras"
+  }
+}

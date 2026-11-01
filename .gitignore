@@ -1,0 +1,15 @@
+.pio/
+.venv/
+__pycache__/
+*.local.json
+secrets.h
+*.key
+generated_config.h
+
+.gradle/
+.kotlin/
+**/build/
+local.properties
+*.jks
+*.keystore
+.idea/

@@ -1,0 +1,734 @@
+{
+  "createdAtBeijing": "2026-10-29T18:25:15.650478+08:00",
+  "status": "当前调整范围交付已就绪；G5版本已获用户认可",
+  "scope": "G5 0.5.0-g5-r01与已实现MANUAL功能；用户明确不做AUTO等跨端",
+  "archive": {
+    "path": "D:\\数字孪生智慧大棚\\output\\当前范围交付-20261029\\智慧大棚-当前范围交付.zip",
+    "sha256": "f92e66c66eddfc705d6d7aa07efcae4cd5051edd65bfc17cdea90c15197038fc",
+    "bytes": 101899052,
+    "entries": 128,
+    "verifiedZipAndEntryHashes": true
+  },
+  "apk": {
+    "versionName": "0.5.0-g5-r01",
+    "versionCode": 9,
+    "sha256": "712bf343b38a7d352d4fc6549ed9d985e7ceac084a0a06aeaee1789951790f29",
+    "apkEntriesScanned": 506,
+    "type": "已实际安装的debug APK，非生产签名版本"
+  },
+  "sourceConfig": {
+    "networkExample": "项目源码/esp32-firmware/network.local.example.json",
+    "cloudExample": "项目源码/esp32-firmware/cloud.local.example.json",
+    "rebuild": "固件构建须自行按示例创建本地network.local.json和cloud.local.json并填写配置；项目原工作区已有本机配置",
+    "builtFromSanitizedBundle": "NOT_PERFORMED"
+  },
+  "samples": "25条新板真实快照及对应采集事件，包含设备标识和时间",
+  "identity": "D5旧定义物理MAC与固件现用逻辑设备名有语义差异，尚待明确",
+  "credentials": {
+    "excluded": [
+      "cloud.local.json",
+      "network.local.json",
+      "generated_config.h",
+      "固件编译输出",
+      "onenet-api.local.json",
+      "Android本地SDK路径",
+      "构建缓存"
+    ],
+    "targetedScan": "源码与APK条目仅对本机两个已知密钥的原文及可解码字节做定向匹配，未发现；不等于覆盖全部可能凭据或编码形式"
+  },
+  "limitations": [
+    "重连曾需复位，直接上电启动未重新验证",
+    "切页内存峰值较高，长时泄漏及GPU耗时未测",
+    "手机补光灯、风扇控制按用户要求未重复验证",
+    "AUTO、设备规则及设备报警跨端能力用户明确不做，原完整项目需求不可写为已实现"
+  ],
+  "evidenceLocations": [
+    "D:\\数字孪生智慧大棚\\验收记录\\M0\\board-replacement-20261029",
+    "D:\\数字孪生智慧大棚\\验收记录\\Android\\G5\\round-01",
+    "D:\\数字孪生智慧大棚\\项目数据"
+  ],
+  "entries": [
+    {
+      "path": "项目源码/android-app/settings.gradle.kts",
+      "bytes": 355,
+      "sha256": "5cb23c63b3efbb42d94cf93f9fbdad0cd68366c62f337536e09375c2fe036f52"
+    },
+    {
+      "path": "项目源码/android-app/build.gradle.kts",
+      "bytes": 347,
+      "sha256": "496f4e8f969d7de6d012107992c4b5f6b47907862ab96d00532e799cd459df2b"
+    },
+    {
+      "path": "项目源码/android-app/gradle.properties",
+      "bytes": 151,
+      "sha256": "6269c938541e3f9894088b2b61f567a952f2a74091536bda38c2d48272669ec2"
+    },
+    {
+      "path": "项目源码/android-app/gradlew",
+      "bytes": 8774,
+      "sha256": "c76f16038b4e70b84ed0b3b9e08e82a8ecaf66ec0efdfdecdece92520fa3cecb"
+    },
+    {
+      "path": "项目源码/android-app/gradlew.bat",
+      "bytes": 2894,
+      "sha256": "0f3ed8f03b50934cb8c48b15a470d5c20a30a5385825e48b55bcc8ea3d8f8e18"
+    },
+    {
+      "path": "项目源码/android-app/app/build.gradle.kts",
+      "bytes": 2004,
+      "sha256": "624a5d0dd38060ea5dc73e9c0eeb72e8341ef1ad2c51262a7340d6778b0fd7c5"
+    },
+    {
+      "path": "项目源码/android-app/app/proguard-rules.pro",
+      "bytes": 96,
+      "sha256": "8187a762b3824eb9d88d1792c4e243aa6f6adf9f213184f54d2bf898a3f13b35"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/build.gradle.kts",
+      "bytes": 1110,
+      "sha256": "2bc16386cba187e78c6c3d32109b4bf3d5007bde857180c24adec4246fb5b213"
+    },
+    {
+      "path": "项目源码/android-app/gradle/wrapper/gradle-wrapper.jar",
+      "bytes": 43705,
+      "sha256": "81a82aaea5abcc8ff68b3dfcb58b3c3c429378efd98e7433460610fecd7ae45f"
+    },
+    {
+      "path": "项目源码/android-app/gradle/wrapper/gradle-wrapper.properties",
+      "bytes": 251,
+      "sha256": "78c6e730fd8d698a4d7dcf6e60d1b8d3a6b1e70d0897c81f370e0528c4d9f529"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/AndroidManifest.xml",
+      "bytes": 1012,
+      "sha256": "6dfe9b09debb8b93988c5224e7357e916bd9631a9a732d5dbb90e6764b0c8343"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/assets/models/greenhouse.glb",
+      "bytes": 11829512,
+      "sha256": "636e10c59ad97381846aed8e17ac17c66b3855b7b489e4c606d1a94f361676ac"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/assets/models/twin-map.json",
+      "bytes": 100267,
+      "sha256": "be9ac778f17e6fa20ecb3a9d3bdbafc3127832bfb3560039becd9aee1e84f0dd"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/data/history/CsvArchiveReader.kt",
+      "bytes": 8879,
+      "sha256": "e74056c3c74271430b53f753f9cc9cf623b94daf25396f05fb2a8db6dfd900a7"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/data/history/HistoryRecordCodec.kt",
+      "bytes": 11755,
+      "sha256": "1c1d9c138a6cc4d229964813d373be6bc391caea07de224656df8b76c0283d7a"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/data/history/HistoryRepository.kt",
+      "bytes": 16442,
+      "sha256": "8b22ad0681dd030121385b3a1c19c9e3950557e0c6e75b8f4a01de867f00dfab"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/data/local/ConnectionStore.kt",
+      "bytes": 9104,
+      "sha256": "35068f8b747b8158675ed6cefd8da985847f10daa67842859320b02e1e771b8e"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/data/local/ControlJournal.kt",
+      "bytes": 8407,
+      "sha256": "8ca8eaf93558fe9e4f261de22410033d4f8d3a9461f6ae602317bc6718b74d97"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/data/local/TwinDatabase.kt",
+      "bytes": 12201,
+      "sha256": "d714a7ce6f0174fee15a1d77cef4867610dd1db34d04b841691df4036369bc80"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/data/model/CompactSnapshot.kt",
+      "bytes": 6167,
+      "sha256": "21d3f5016407b569bcec3740a2d38c7fccff54d0de12be82db00a417a0c60a2c"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/data/model/ControlPacket.kt",
+      "bytes": 3081,
+      "sha256": "fc60a172a4f3f697984a33b74ab7a02e489b626a9e103bd7e3e13fcf5bec2a14"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/data/model/DemoStateFactory.kt",
+      "bytes": 6926,
+      "sha256": "d2a2f96e5c766b787f661ef3327ca597ec5d43c3faecfec12d761cd9c7bcca4c"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/data/monitoring/AlarmPersistence.kt",
+      "bytes": 2613,
+      "sha256": "1cff6f1b94ca36da7286a9213d9095d278721291c43070d56adcc8ef9f80a7ed"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/data/monitoring/MonitorRepository.kt",
+      "bytes": 31758,
+      "sha256": "9b22c5b90eb00c4ae42b8952a9e627e3ade57ea3d9d3ae4f0a2842d2d47b0e02"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/data/remote/OneNetClient.kt",
+      "bytes": 9696,
+      "sha256": "577c3772c64580864e25cbd2e02d7510477049f0cb88833b9bf09957c3e3408b"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/data/repository/HomeStateRepository.kt",
+      "bytes": 48373,
+      "sha256": "5e7bccfc368d61ca8352687e3d26e3e3aa1a8922e50020f2066278b5c6169462"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/data/repository/SyncDiagnostics.kt",
+      "bytes": 4660,
+      "sha256": "05c1563610e48b6dc12f93d5a260f8cc60bd49fad15945e60307f29c54e17a08"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/data/security/OneNetCredentialVault.kt",
+      "bytes": 4156,
+      "sha256": "2bda09a71121faaf3b47cf2547a613cd701ca93a0704e11fbe1bdab6878677e8"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/domain/ControlRequestState.kt",
+      "bytes": 2275,
+      "sha256": "66205dae4e8909520f60742339a9d624b70772d93e31ebb8b79a9d775fa4ae2d"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/domain/GreenhouseTwinState.kt",
+      "bytes": 6117,
+      "sha256": "3654b583c6a99756e4bca63035f08517bec956c1870fe444882e87a98aead836"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/domain/history/HistoryModels.kt",
+      "bytes": 3002,
+      "sha256": "2e87c2f2b2e94506d5c82e7dc816ee4b90fb52961ffa8cef13165aede91f55ca"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/domain/history/HistoryTimeline.kt",
+      "bytes": 2442,
+      "sha256": "3609e4701485b72a1a4b3f616447b6097d7db5eb6d621b445231abf409fc3dd8"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/domain/history/ReplayState.kt",
+      "bytes": 2847,
+      "sha256": "97328039e82b560436a7714a1857d2cfcfd0b9dc5a818c2d6222d808fa4440c6"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/domain/monitoring/MonitoringModels.kt",
+      "bytes": 5265,
+      "sha256": "ba9cf2d4152127d0083f6bdb5bea1769a281fb92f4e3e2277c04a0de989fa516"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/domain/SceneExecutionState.kt",
+      "bytes": 3179,
+      "sha256": "d6e4e0d5939244467a54c8f650e2a771dacfefbeac155576b7df3a612650bc68"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/GreenhouseApplication.kt",
+      "bytes": 597,
+      "sha256": "607e8fb805de71a2f72e426ee304929a99c055e2d0772059ceab0747d89f0208"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/MainActivity.kt",
+      "bytes": 15187,
+      "sha256": "ee24824a85825ebd4bb98ba00d44f8303b21329ba447c7916e3fb7630e366a52"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/ui/components/CommonComponents.kt",
+      "bytes": 4394,
+      "sha256": "8ada645eee5642d15b34350ab0de04d5a24efe1eff5c07ae98b41765fc7a5ebb"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/ui/components/GreenhouseNavigation.kt",
+      "bytes": 5414,
+      "sha256": "63cfe9e708da07d5e51f8a3b39f7adf4054732156a4edb9eff1573fe5c1eb81c"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/ui/control/DeviceControlScreen.kt",
+      "bytes": 7284,
+      "sha256": "df1adfab27e018d305b888da4b382f1b3a43513c9e936416e24a9c7c4a9265d0"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/ui/control/DeviceControlSheet.kt",
+      "bytes": 17549,
+      "sha256": "542fcd58e1b9fcc2d86b68b831e9d45639d04aa7f3a69027d93fe0bba5597c19"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/ui/control/ManualScenePanel.kt",
+      "bytes": 10015,
+      "sha256": "f1448751ac1342a3aae37005a028fe617d3e7732ec91d5f20b59cd3f978af67b"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/ui/history/CsvImportSheet.kt",
+      "bytes": 11127,
+      "sha256": "a9374c4fabd8f81b66c9a44898894dd01e0833d7ccb9a7680ffb353cd0128c8d"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/ui/history/DataCenterScreen.kt",
+      "bytes": 27925,
+      "sha256": "cdd76fc9f7f408e898ea5f1f03c3bfcefca9e23a6ae9a6ec4535853ecea386d8"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/ui/history/HistoryChartAggregation.kt",
+      "bytes": 3324,
+      "sha256": "e678059a5dbb16435b8a82774f5af3c3ce1cd111090888105631063cfeb2d01f"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/ui/history/HistoryChartStyle.kt",
+      "bytes": 154,
+      "sha256": "33d9184d4d7a8b5765b8bc03ccedfb8474b10904dc8eb127f40c50508f9a4c34"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/ui/history/HistoryTrendChart.kt",
+      "bytes": 32173,
+      "sha256": "fe2b74c16a0226bc5cec59e3b94a97126b88c2dab3eb255b82e1f7ab1dedbbc3"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/ui/history/HistoryUiState.kt",
+      "bytes": 2674,
+      "sha256": "3fca87d0451104f97aac246ebdb76c631aadf8b30998ecbcb854d44cf9bd02ba"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/ui/history/HistoryViewModel.kt",
+      "bytes": 14202,
+      "sha256": "56b79c5bf588ed80aec38efa2abde2b2d7243de9d14b482374d5cbe00c9409ab"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/ui/history/ReplayScreen.kt",
+      "bytes": 17947,
+      "sha256": "b4514a574a72ea2685474c31e2a6ff420b291937f41fde380fc95c61fe1cf406"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/ui/home/HomeScreen.kt",
+      "bytes": 28417,
+      "sha256": "e8c1e0d5b01802bad7666bf5f050b5c9b6ae3a0d8d30b9cfb9539400a3efc325"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/ui/home/HomeViewModel.kt",
+      "bytes": 6946,
+      "sha256": "8fbb052da7595a6c4586069a933eda901e7c213781ab62354f9f468b2ae705e8"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/ui/monitoring/AlarmCenterScreen.kt",
+      "bytes": 18370,
+      "sha256": "c5e358a8e88983e07a3148bc5d3b881d21d7dad4e38ef73f885430e309e0e82b"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/ui/monitoring/EnvironmentAdviceSheet.kt",
+      "bytes": 7183,
+      "sha256": "db27bd9462917d576cd8fe4b84bf186b208bc612637a11077d894cf12513fa46"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/ui/scene/GreenhouseAssetMapping.kt",
+      "bytes": 15323,
+      "sha256": "fd7d431a9df4c0043cfffa92a4a06b8c2fe0a98b0f8e0f4b15066a66c1f99f64"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/ui/scene/GreenhouseModelPreview.kt",
+      "bytes": 32129,
+      "sha256": "9f237ef2440595a55c1e0e0f38d0b7527fd3b814170e5c2708b36fddb5b34c06"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/ui/scene/GreenhouseRenderResources.kt",
+      "bytes": 8913,
+      "sha256": "b58873f907f539a80e697ba5c380654987f621a7052303e051aced92cc0c6934"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/ui/scene/GreenhouseSceneTypes.kt",
+      "bytes": 815,
+      "sha256": "36240fe888807153ac6dd1490291fc6c89449d1a5cdbaac4393c36d48f011b7a"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/ui/settings/SettingsScreen.kt",
+      "bytes": 23819,
+      "sha256": "a170bf50bb6505719d6ca51a0108db4a800bb77d3433b6d302be18e240cbdae7"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/ui/theme/GreenhouseTheme.kt",
+      "bytes": 3509,
+      "sha256": "cf3ad3557a53bb0030b172033c83d83f41c544cb134f4880b011f8dcbfdcd976"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/java/cn/greenhouse/twin/ui/twin/GreenhouseTwinScreen.kt",
+      "bytes": 24869,
+      "sha256": "e16278400726825129882b576f6783bd54400a4077b0bfae136e3d953a09bf88"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/res/drawable-nodpi/application_art.png",
+      "bytes": 989097,
+      "sha256": "8b905431465996c96507d13a992ed67541f9b7b6263a24d04411767c770aef75"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/res/drawable-nodpi/launcher_icon.png",
+      "bytes": 164415,
+      "sha256": "86144d895969f84ebee78c1d3073601a1d4a1fdf2ff6cdc3138cbb843fb87d7b"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/res/drawable-nodpi/page_close.png",
+      "bytes": 701910,
+      "sha256": "464a9bc94a9238355c795ff6ab0a2af77bf9118327064a68819378f86fb36527"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/res/drawable-nodpi/settings_open.png",
+      "bytes": 1090361,
+      "sha256": "fad9fa6e5efe1a30275e17bfda906f16af3ddb27cb03fc97e4c03d03ff16feb0"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/res/drawable-nodpi/sync_refresh.png",
+      "bytes": 625443,
+      "sha256": "216a0ee4da13fcdcf7f3c29158e83ef058e00a8942f1a1c6c8cb6ae512800998"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/res/values/strings.xml",
+      "bytes": 114,
+      "sha256": "5ae720dd92e81b08ba727c44e199cb53dfca674dc45d52790613abbdc38f9e4c"
+    },
+    {
+      "path": "项目源码/android-app/app/src/main/res/values/themes.xml",
+      "bytes": 593,
+      "sha256": "40bfd699cd48d97585bf11e9834bb8bf228d2d944e37df6d79223d0c0c420268"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/AndroidManifest.xml",
+      "bytes": 111,
+      "sha256": "c8fe08b06e479efc7e3d00476fffe693a3e943e2b874b3c6a1ba5156fc180751"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/java/com/example/environmenticonmotion/motion/EnvironmentMotionTokens.kt",
+      "bytes": 5329,
+      "sha256": "6775d570283935f4fcbda677f2078246d36e9f820830d2394e2a6f790ffaef2e"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/java/com/example/environmenticonmotion/ui/motion/AlarmArtwork.kt",
+      "bytes": 9880,
+      "sha256": "c89d98f27462a3e6854b411f4b67d7b596bffd63ae4caefceaf7f42f9966d79a"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/java/com/example/environmenticonmotion/ui/motion/AlarmIconMotion.kt",
+      "bytes": 8555,
+      "sha256": "9f25b802dda98b9af1e14ad7628a955f39187f46a7a94aa3962e5bd8cf75f3b0"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/java/com/example/environmenticonmotion/ui/motion/AnimatedAirHumidityIcon.kt",
+      "bytes": 9026,
+      "sha256": "ed063c80f72f5d7cafa33bb448d3ace92ac172b36ae4264b97fc3b250919a2d6"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/java/com/example/environmenticonmotion/ui/motion/AnimatedAlarmCenterIcon.kt",
+      "bytes": 1396,
+      "sha256": "a0cfbbc4c0d33260d22e47f6aee7d9a92b0e820be37dfe3fbced53d0bc9097ec"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/java/com/example/environmenticonmotion/ui/motion/AnimatedDataCenterIcon.kt",
+      "bytes": 1634,
+      "sha256": "f71e21a8230ac614bad89ab7b22da69ee502235717e77c43721a37473c0d5dbc"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/java/com/example/environmenticonmotion/ui/motion/AnimatedDigitalTwinIcon.kt",
+      "bytes": 1557,
+      "sha256": "face2ae0b95f04220ec143959ce743ad774725d3a9a6c99b65b05d3a538fdf05"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/java/com/example/environmenticonmotion/ui/motion/AnimatedFanIcon.kt",
+      "bytes": 6157,
+      "sha256": "e776eec0c80b65199d2b102fef110b96a0b72a5095d37b3965ea03e8f8308eb4"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/java/com/example/environmenticonmotion/ui/motion/AnimatedGrowLightIcon.kt",
+      "bytes": 5231,
+      "sha256": "3c4d856d8d21d10d497a59877e33461875debad80aed2b05f1f006fa6c6bca25"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/java/com/example/environmenticonmotion/ui/motion/AnimatedHomeIcon.kt",
+      "bytes": 1169,
+      "sha256": "789070fc594491bf932e9ebea4ddf17ea6ddee2eed62ab7271904eb7c7506774"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/java/com/example/environmenticonmotion/ui/motion/AnimatedLightIcon.kt",
+      "bytes": 7299,
+      "sha256": "3b5f510287daeb8ec13e070fc241a92523ed1dd710a8c31d0f57edf8e2ff41f4"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/java/com/example/environmenticonmotion/ui/motion/AnimatedSoilMoistureIcon.kt",
+      "bytes": 11680,
+      "sha256": "1f556bc946f6c02841627c6cf55d833079e7f3a7e2543656e323cf30c88fb7aa"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/java/com/example/environmenticonmotion/ui/motion/AnimatedTemperatureIcon.kt",
+      "bytes": 11772,
+      "sha256": "0e160bd47cac2e0d9396fa55367025e973c0c915e9910b30abcae8be6473910b"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/java/com/example/environmenticonmotion/ui/motion/AnimatedWaterPumpIcon.kt",
+      "bytes": 10210,
+      "sha256": "487c3e480fb191e6bbf6416dbb2c2c0073d71491a1309a079f24dd8dcd3e5e6b"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/java/com/example/environmenticonmotion/ui/motion/FanArtwork.kt",
+      "bytes": 5640,
+      "sha256": "96f8fcc155c8d3b22b2e688a5d80ff711d6de4de3968c6c736b233f040c8be07"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/java/com/example/environmenticonmotion/ui/motion/GrowLightArtwork.kt",
+      "bytes": 4798,
+      "sha256": "130e985fdacb720564bd7b064b10843430e226c50b0f489809141271d79bb6c0"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/java/com/example/environmenticonmotion/ui/motion/NavigationArtwork.kt",
+      "bytes": 8431,
+      "sha256": "b9d960001795b5a65d6e25fb4ab05224db73f6fa02e0c8492dd337cc924d9bbf"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/java/com/example/environmenticonmotion/ui/motion/NavigationIconMotion.kt",
+      "bytes": 9257,
+      "sha256": "f21537310180c66c4e444356549b4209db160911f5f3a6a5a89168c2755ad618"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/java/com/example/environmenticonmotion/ui/motion/NavigationMovingLayers.kt",
+      "bytes": 9613,
+      "sha256": "b8f7043ff0cad04d9296b78bc6554bf6a0e6767e925372cb076024193c2d5634"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/java/com/example/environmenticonmotion/ui/motion/WaterPumpLayers.kt",
+      "bytes": 5653,
+      "sha256": "037efe5aa35c927574accab67e5b36dceb99c6210badfd34ab60134c5d2633da"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/res/drawable/water_pump_highlight.xml",
+      "bytes": 378,
+      "sha256": "3edd3cfe674639a6a7db852deb5f8800b0ecf2a1fcd96c66eccd046a998e2d02"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/res/drawable/water_pump_hub.xml",
+      "bytes": 895,
+      "sha256": "79f8b6e211a5e86d59f9b0f737c05f2ab82867df7f001c4d4eaa69a27268c506"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/res/drawable/water_pump_impeller.xml",
+      "bytes": 2609,
+      "sha256": "6e62331482d3803f110ebf29f6f15ff6ef48147ac5fe5d6d26abe6d289b67865"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/res/drawable/water_pump_water.xml",
+      "bytes": 897,
+      "sha256": "02a66d413d358f200ceafc43866687648aabcacad509ae25c15afd2b8f6f1534"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/res/drawable-nodpi/device_fan.png",
+      "bytes": 1327848,
+      "sha256": "aeb299a071e199064857fc41f5372f75b2c9e63639b9f547bb665c53923b2d16"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/res/drawable-nodpi/device_grow_light.png",
+      "bytes": 1543942,
+      "sha256": "2ae8151761fa751b723d7f5ed43251678b5c088ecfbdb281b56fd965f35e1468"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/res/drawable-nodpi/device_water_pump.png",
+      "bytes": 1204834,
+      "sha256": "ecae28eef8f7439ef6aa2fad1084acc24446080597710848dacf225415bb7546"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/res/drawable-nodpi/env_air_humidity.png",
+      "bytes": 1605566,
+      "sha256": "55f9e660c302f7115ec96c2818cdd85740ada35e2c2169aadba960c1a4778926"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/res/drawable-nodpi/env_light.png",
+      "bytes": 713547,
+      "sha256": "bf62323bade595084ae1fbc2336210ebadd28299707820d2b93af36efd7d4d7d"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/res/drawable-nodpi/env_soil_moisture.png",
+      "bytes": 1186796,
+      "sha256": "528c061231412385e10ce0bc88bbcdde1753108d4d616e4bb96df8fb332ecb67"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/res/drawable-nodpi/env_temperature.png",
+      "bytes": 637320,
+      "sha256": "632ae304d05aa58c9fadd15c1bca8ae138af72cb712feb63fe0bbbeb7be4ec94"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/res/drawable-nodpi/nav_alarm_center.png",
+      "bytes": 1412298,
+      "sha256": "9ae20a4fc4991611ae4dab95447c824c792eb96011bb98659b265f5a50e6ca80"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/res/drawable-nodpi/nav_data_center.png",
+      "bytes": 1435735,
+      "sha256": "df8e3b6c9927c8addb9f029a7f62f75ef44c936f68016ab5f9b3827055d45476"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/res/drawable-nodpi/nav_digital_twin.png",
+      "bytes": 1494309,
+      "sha256": "a35a77afe0a312fb161ed01fb43ba6f8a60dfb291f83ea94942c1889e5c45621"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/res/drawable-nodpi/nav_home.png",
+      "bytes": 1336345,
+      "sha256": "735b260303397cdb8c1657881138e117fcaafda620098c98b4e0b6d32e7281f8"
+    },
+    {
+      "path": "项目源码/android-app/greenhouse-icons/src/main/res/drawable-nodpi/water_pump_body.png",
+      "bytes": 1142905,
+      "sha256": "fb61bcfac2d760be187d9940c6838ee56a4288c685c56466ed0e16c36d85f073"
+    },
+    {
+      "path": "项目源码/esp32-firmware/platformio.ini",
+      "bytes": 511,
+      "sha256": "40bcf06b3ab5d3025459b292514837b1b1c3193d6adc883918edbce21eed9012"
+    },
+    {
+      "path": "项目源码/esp32-firmware/configure.py",
+      "bytes": 3582,
+      "sha256": "96be1c108ca41f0c7796f352f2f11b4b08aecbc01f86d80f53abe20fe360af43"
+    },
+    {
+      "path": "项目源码/esp32-firmware/partitions.csv",
+      "bytes": 348,
+      "sha256": "a608552476bd91e8517c02f806f469fefd2fd45bf607af8d56adaca85671697e"
+    },
+    {
+      "path": "项目源码/esp32-firmware/certificate.pem",
+      "bytes": 1200,
+      "sha256": "a576998e38b530bf14c0200e8a02e997616d99e0e1bb25475ec7e7a80e5fd17f"
+    },
+    {
+      "path": "项目源码/esp32-firmware/src/cloud.cpp",
+      "bytes": 12708,
+      "sha256": "8d8d9fda64f69a35ee7e2272286f05f3bcff087fc2ab066c41a42147cfb80a8f"
+    },
+    {
+      "path": "项目源码/esp32-firmware/src/main.cpp",
+      "bytes": 16980,
+      "sha256": "41e694ba2269ad497756795ac64dd0c7fdb73652dc65fc6a45d59fa93007e6b9"
+    },
+    {
+      "path": "项目源码/esp32-firmware/include/cloud.h",
+      "bytes": 421,
+      "sha256": "4f072d41790baf875820ba4c02584f67b151eb956583f4ab93b69e896fb27229"
+    },
+    {
+      "path": "项目源码/esp32-firmware/include/command_store.h",
+      "bytes": 2649,
+      "sha256": "5adf9edd7fde4c9cd677833fa137d12db17c9ae2a29ede95d32bff1385717d95"
+    },
+    {
+      "path": "项目源码/contracts/command.schema.json",
+      "bytes": 1063,
+      "sha256": "44ad35406651912eb96eaa3472c81a1b614d4c9846e0e8e60be3fc6f4426841c"
+    },
+    {
+      "path": "项目源码/contracts/csv-columns.json",
+      "bytes": 1410,
+      "sha256": "bb3c36d6c6917aa2e76908c2346f6d2adb6230a2aba946820aa417509555f3d9"
+    },
+    {
+      "path": "项目源码/contracts/diagnostic.example.jsonl",
+      "bytes": 118,
+      "sha256": "eba55e684496a3f82eb6f929cbee231eb9700dc05835dcf30e6a3c0773a5fc9f"
+    },
+    {
+      "path": "项目源码/contracts/onenet-mapping.json",
+      "bytes": 2229,
+      "sha256": "7a3895c2a3d7f8b7e791e38888c8adc1ba5d231d95660fb3f03819f811353f29"
+    },
+    {
+      "path": "项目源码/contracts/onenet-model.draft.json",
+      "bytes": 2410,
+      "sha256": "57d7e628f1d1e760957004d294c16b01a405dd6b8fe63699082ecab5f79e82b9"
+    },
+    {
+      "path": "项目源码/contracts/record.schema.json",
+      "bytes": 8390,
+      "sha256": "c6f0e848da992ad1ebdba2342b0305013c95408f2248cd4a8e2c3f55f279decc"
+    },
+    {
+      "path": "项目源码/contracts/runtime.json",
+      "bytes": 2406,
+      "sha256": "53f88ff5cc46ed6e7a27fc22ebf19dd74a78a12972fd3dad3c5887231a953149"
+    },
+    {
+      "path": "项目源码/contracts/serial.example.jsonl",
+      "bytes": 2267,
+      "sha256": "5fe2b8d156ed8bbe3231d87ec15e70a488a93512e7d05462e73d8ec68fb94249"
+    },
+    {
+      "path": "项目源码/serial-archiver/archiver.py",
+      "bytes": 15285,
+      "sha256": "f2f114518e12c32f7a750aa701b45ec4ec12858f516b962ed6fc6352f902c8e7"
+    },
+    {
+      "path": "项目源码/serial-archiver/requirements.txt",
+      "bytes": 127,
+      "sha256": "744afe14937a121f6b9eec1e61217c5266dda613dbb77ce0375c1e38cba6bf8a"
+    },
+    {
+      "path": "项目源码/esp32-firmware/network.local.example.json",
+      "bytes": 35,
+      "sha256": "2a0d1bb8865890936d2525cc2213d3df77b192bb12284a69ce4b0323cfae032a"
+    },
+    {
+      "path": "项目源码/esp32-firmware/cloud.local.example.json",
+      "bytes": 112,
+      "sha256": "c4961c84acf9dcadf36deb91d7a0aa51d56622dabbb1a22bf4f54c1a5fc75430"
+    },
+    {
+      "path": "真实数据/2026-10-29/snapshots.csv",
+      "bytes": 9679,
+      "sha256": "46973af4562e7e5ba487ec00f35c8a4f71ad725f4fa55c2bc8f339c8815ea070"
+    },
+    {
+      "path": "真实数据/2026-10-29/events.csv",
+      "bytes": 7208,
+      "sha256": "49b969ec370327485060c6df410c0f1ac05eaef17fc8425aa3233b3724e2eab1"
+    },
+    {
+      "path": "Android应用/智慧大棚-G5-0.5.0-round01-build02.apk",
+      "bytes": 74614845,
+      "sha256": "712bf343b38a7d352d4fc6549ed9d985e7ceac084a0a06aeaee1789951790f29"
+    }
+  ],
+  "userAcceptance": {
+    "quote": "认可当前 G5 版本",
+    "build": "0.5.0-g5-r01/code9/build02",
+    "scope": "已完成前端和MANUAL预约/场景"
+  },
+  "userScopeDecision": {
+    "quote": "不做跨端能力了，继续（还有活的话）",
+    "excluded": [
+      "AUTO",
+      "设备规则跨端配置",
+      "设备本地报警跨端能力"
+    ],
+    "note": "原项目要求留存，未实现不写成完成"
+  },
+  "userIterationStandard": "功能迭代缺少证据支持至少70%把握时不实施；未测不等于通过",
+  "entryPoints": {
+    "existingApk": "D:\\数字孪生智慧大棚\\验收记录\\Android\\G5\\round-01\\智慧大棚-G5-0.5.0-round01-build02.apk",
+    "originalFirmwareProject": "D:\\数字孪生智慧大棚\\项目源码\\esp32-firmware",
+    "originalAndroidProject": "D:\\数字孪生智慧大棚\\项目源码\\android-app",
+    "serialArchiver": "D:\\数字孪生智慧大棚\\项目源码\\serial-archiver\\archiver.py",
+    "existingRealData": "D:\\数字孪生智慧大棚\\项目数据",
+    "processRecord": "D:\\数字孪生智慧大棚\\第三版项目文档说明\\7开发过程与阶段执行手册 V3.0.docx",
+    "handoff": "D:\\数字孪生智慧大棚\\HANDOFF.md",
+    "reviewVideo": "D:\\数字孪生智慧大棚\\验收记录\\Android\\G5\\round-01\\device\\g5-device-review-20261029.mp4"
+  },
+  "quickUse": [
+    "已安装APK可直接使用；需要重新安装时使用Android SDK adb install -r 指向APK。",
+    "VS Code打开现有固件目录，PlatformIO环境greenhouse中可见Build、Upload和Monitor，串口重新发现后选择，波特率115200。",
+    "同一串口只能由监视器或归档工具其中之一占用。",
+    "提取源码包重新构建固件时，将两个example JSON复制为相应local JSON并填写自己的网络及OneNET配置，绝不把已配置的固件二进制当作无凭据文件。"
+  ],
+  "d7": {
+    "copy": "D:\\数字孪生智慧大棚\\output\\当前范围交付-20261029\\开发过程与阶段执行手册-D7.docx",
+    "original": "D:\\数字孪生智慧大棚\\第三版项目文档说明\\7开发过程与阶段执行手册 V3.0.docx",
+    "sha256": "405e7bc7a858ca286c70a9a0d99f4910c814faff82a9682d022564ad6602477d",
+    "bytes": 139117,
+    "pages": 94,
+    "targetedKnownKeyScan": "无命中，仅限本机两项已知密钥及可解码字节"
+  },
+  "remainingCurrentScopeGates": 0,
+  "originalFullProjectComplete": false,
+  "completedAtBeijing": "2026-10-29T18:31:12.046498+08:00"
+}
