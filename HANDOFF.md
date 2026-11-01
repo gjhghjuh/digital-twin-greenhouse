@@ -318,3 +318,12 @@ D7最新版本记录G5认可、跨端不做与当前范围交付，94页、609�
 包内排除本机WiFi/云端私有配置、Android密钥配置、generated_config.h、含密钥的已配置固件bin/ELF和构建缓存；对本机两项已知密钥原文及可解码字节，在源码和APK各条目做过定向匹配无命中，不宣称全面安全审计。重新构建固件需按示例自建并填写本地网络和云配置；脱敏包未独立构建。真实CSV包含设备身份与时间，按实际需要使用。原工作区保留可直接运行的本机配置和已烧录设备状态。
 
 用户已认可G5当前范围，明确不做AUTO、设备规则、设备本地报警等跨端能力。当前范围交付资料已就绪，不再以极端测试或低于70%把握的猜测性迭代拖延。原项目完整跨端需求未实现，不冒称原K/M3全部通过；USB重连一次需复位、D5设备ID定义差异和高内存峰值保留为限制。
+
+
+## 16. 2026-11-02 GitHub 备份与下载交付（最新）
+
+用户要求把项目相关文件上传 GitHub。已创建私有仓库 [digital-twin-greenhouse](https://github.com/gjhghjuh/digital-twin-greenhouse)，默认分支 main；初始源码提交 47827883a22202ee8fb3c152f48e73de00594296。仓库在线可浏览 Android/ESP32 源码、3D 模型和图标、契约、串口归档工具、真实 CSV、七份 V3.0 项目文档、原 HANDOFF 与交付清单，共139个文件。沿用已脱敏交付包，没有上传本机网络/OneNET凭据、生成配置头、含凭据固件编译产物或构建缓存；公开CA证书 certificate.pem 已纳入。
+
+下载版本：[v0.5.0-g5-r01](https://github.com/gjhghjuh/digital-twin-greenhouse/releases/tag/v0.5.0-g5-r01)。附件为已认可的debug APK、完整脱敏交付ZIP、D7副本、交付清单、35秒实机录屏；5项附件均已上传，GitHub返回的SHA256逐项与本地一致。文件使用英文下载名，内容与本地原件一致；当前范围与已知限制保持不变。私有仓库与Release需使用有权限的GitHub账号访问。
+
+本地可继续提交的脱敏Git工作副本位于 output/github-upload-20261102/repository，与保留真实私有配置的原工作区分开。后续上传应继续按白名单同步，不得将整个原工作区直接加入Git。上传文件清单、校验值、远端提交与附件地址见 output/github-upload-20261102/upload-progress.json。Chrome附件接口因扩展未允许文件URL而不可用，最终复用本机现有GitHub凭据通过Git和GitHub API完成；未更改浏览器安全设置、未创建新访问密钥。
